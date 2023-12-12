@@ -1,17 +1,21 @@
-.wrapper {
+.container {
   padding: 0px 128px;
 }
-.header__top {
+.container-header {
   display: flex;
   width: 1184px;
   padding: 32px 0px;
   justify-content: space-between;
   align-items: center;
 }
-.logo__header {
+.logo-header {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.logo-image {
+  width: 40px;
+  height: 40px;
 }
 .travlog {
   color: var(--Black, #191825);
@@ -21,30 +25,30 @@
   font-weight: 900;
   line-height: 40px;
 }
-.nav_list {
+.nav-list {
   display: flex;
   align-items: flex-start;
   gap: 64px;
 }
-.nav_link a {
+.link a {
   color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
   font-family: Circular Std;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 16.8px */
+  line-height: 120%;
 }
-.nav_link a:hover{
-  color:black;
+.link a:hover {
+  color: black;
 }
-.nav_list a {
+.nav-list a {
   text-decoration: none;
 }
 .button {
   display: flex;
   align-items: flex-start;
 }
-.login__button {
+.login-button {
   display: flex;
   padding: 16px 32px;
   align-items: flex-start;
@@ -59,24 +63,24 @@
   font-weight: 700;
   line-height: 120%;
 }
-.login__button:hover{
+.login-button:hover {
   background-color: #191825;
-  color: #EEE;
+  color: #eee;
 }
-.signup__button {
+.signup-button {
   display: flex;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 8px;
   border-radius: 100px;
   background: var(--Primary, #5d50c6);
-  color: var(--Light, #EEE);
-font-family: Circular Std;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%; 
+  color: var(--Light, #eee);
+  font-family: Circular Std;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
-.signup__button:hover{
+.signup-button:hover {
   opacity: 0.8;
 }
