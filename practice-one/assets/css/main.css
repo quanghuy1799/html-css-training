@@ -1,15 +1,24 @@
 .container {
-  width: 1440px;
-  height: 6314px;
+  width: 1184px;
+  /* height: 6314px; */
   background: #fff;
+  margin: 0 auto;
 }
+
 /* Header */
-.container-header {
+.main-header {
   display: flex;
   width: 1184px;
-  padding: 32px 128px;
+  /* padding: 32px 128px; */
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  text-decoration: none;
 }
 .logo-header {
   display: flex;
@@ -20,7 +29,7 @@
   width: 40px;
   height: 40px;
 }
-.travlog {
+.logo-heading {
   color: var(--Black, #191825);
   font-family: Circular Std Book;
   font-size: 24px;
@@ -28,6 +37,7 @@
   font-weight: 900;
   line-height: 40px;
 }
+
 .nav-list {
   display: flex;
   align-items: flex-start;
@@ -47,7 +57,8 @@
 .nav-list a {
   text-decoration: none;
 }
-.button {
+
+.button-group {
   display: flex;
   align-items: flex-start;
 }
@@ -83,11 +94,16 @@
   font-weight: 700;
   line-height: 120%;
   box-shadow: none;
+  border: none;
 }
 .signup-button:hover {
   opacity: 0.8;
 }
+/* End Header */
+
+
 /* Main CSS */
+
 /* Explore the world! */
 .exploretheword-content {
   display: flex;
@@ -432,7 +448,7 @@
   flex: 1 0 0;
   align-self: stretch;
   border-radius: 32px 32px 0px 0px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #d9d9d9;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #d9d9d9; */
 }
 .option {
   display: flex;
@@ -637,7 +653,7 @@
   width: 277px;
   height: 353px;
   flex-shrink: 0;
-  background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat;
+  /* background: url(<path-to-image>), lightgray 0px 0px / 100% 100% no-repeat; */
 }
 /* Key features */
 .keyfeatures-content {
@@ -851,7 +867,7 @@
   width: 128px;
   height: 128px;
   border-radius: 128px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 }
 .rate-star {
   display: flex;
