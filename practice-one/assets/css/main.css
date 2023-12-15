@@ -105,13 +105,13 @@
 
 /* Explore the world! */
 
-.exploretheworld-content {
+.explore-the-world-content {
   display: flex;
   width: 1184px;
   padding: 64px 0px;
   align-items: center;
 
-  .exploretheworld-container {
+  .explore-the-world-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -119,7 +119,7 @@
     flex-shrink: 1 0 0;
     width: 412px;
   }
-  .exploretheworld-button {
+  .explore-the-world-item {
     display: flex;
     padding: 16px 32px;
     align-items: center;
@@ -133,7 +133,7 @@
       0px 548px 219px 0px rgba(0, 0, 0, 0.01),
       0px 856px 240px 0px rgba(0, 0, 0, 0);
   }
-  .exploretw {
+  .explore-the-world-btn {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -146,20 +146,14 @@
     border: none;
     background-color: white;
   }
-  .exploretw:hover {
+  .explore-the-world-btn:hover {
     opacity: 0.8;
   }
-  .exploretw-logo {
+  .explore-the-world-logo {
     width: 24px;
     height: 24px;
   }
-  .exploretheword-title {
-    display: flex;
-    padding: 16px 32px;
-    align-items: center;
-    gap: 16px;
-  }
-  .travel-top {
+  .travel-top-title {
     align-self: stretch;
     color: #000;
     font-family: Circular Std Book;
@@ -168,7 +162,7 @@
     font-weight: 700;
     line-height: 120%;
   }
-  .pink {
+  .change-color {
     color: var(--Secondary, #f85e9f);
     font-family: Circular Std Book;
     font-size: 69px;
@@ -185,27 +179,12 @@
     font-weight: 400;
     line-height: 160%;
   }
-  .get-start {
-    display: flex;
-    padding: 16px 32px;
-    align-items: center;
-    gap: 16px;
-    border-radius: 100px;
-    background: #fff;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
-      0px 34px 75px 0px rgba(0, 0, 0, 0.07),
-      0px 137px 137px 0px rgba(0, 0, 0, 0.06),
-      0px 308px 185px 0px rgba(0, 0, 0, 0.04),
-      0px 548px 219px 0px rgba(0, 0, 0, 0.01),
-      0px 856px 240px 0px rgba(0, 0, 0, 0);
-  }
-
-  .button-content {
+  .explore-the-world-item-btn {
     display: flex;
     align-items: flex-start;
     gap: 16px;
   }
-  .get-started {
+  .get-started-btn {
     display: flex;
     padding: 16px 32px;
     align-items: flex-start;
@@ -224,10 +203,10 @@
     font-weight: 700;
     line-height: 120%;
   }
-  .get-started:hover {
+  .get-started-btn:hover {
     opacity: 0.8;
   }
-  .watch-demo {
+  .watch-demo-btn {
     display: flex;
     padding: 16px 32px;
     align-items: center;
@@ -246,7 +225,7 @@
     width: 24px;
     height: 24px;
   }
-  .watch-demo:hover {
+  .watch-demo-btn:hover {
     background-color: whitesmoke;
   }
   .content1-image {
@@ -276,7 +255,7 @@
   align-items: center;
   gap: 31px;
   position: absolute;
-  left: 670px;
+  left: 625px;
   top: 250px;
 }
 .check-in-item-group-1 {
@@ -295,16 +274,16 @@
 }
 .plane-frame {
   position: absolute;
-  left: 610px;
+  left: 565px;;
   top: 520px;
 }
 .add-fr-frame {
   position: absolute;
   top: 825px;
-  left: 1020px;
+  left:980px;;
 }
 .top-place-frame {
   position: absolute;
   top: 660px;
-  left: 1140px;
+  left: 1090px;
 }
