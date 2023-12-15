@@ -1,0 +1,100 @@
+.container {
+    width: 1184px;
+    background: #fff;
+    margin: 0 auto;
+  }
+/* Header */
+.main-header {
+    display: flex;
+    width: 1184px;
+    padding: 32px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    align-items: center;
+    gap: 16px;
+    display: flex;
+    text-decoration: none;
+  }
+  .logo-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-heading {
+    color: var(--Black, #191825);
+    font-family: Circular Std Book;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 64px;
+  }
+  .link a {
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+    font-family: Circular Std Book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .link a:hover {
+    color: black;
+  }
+  .nav-list a {
+    text-decoration: none;
+  }
+  
+  .button-group {
+    display: flex;
+    align-items: flex-start;
+  }
+  .login-button {
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 8px;
+    border: none;
+    border-radius: 100px;
+    background: var(--white, #fff);
+    color: var(--Dark, #222831);
+    font-family: Circular Std Book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .login-button:hover {
+    background-color: whitesmoke;
+  }
+  .signup-button {
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Primary, #5d50c6);
+    color: var(--Light, #eee);
+    font-family: Circular Std Book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    box-shadow: none;
+    border: none;
+  }
+  .signup-button:hover {
+    opacity: 0.8;
+  }
+  /* End Header */  
