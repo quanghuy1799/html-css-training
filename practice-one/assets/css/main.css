@@ -1,72 +1,216 @@
 .container {
-    width: 1184px;
-    background: #fff;
-    margin: 0 auto;
-  }
+  width: 1184px;
+  background: #fff;
+  margin: 0 auto;
+}
 /* Header */
 .main-header {
+  display: flex;
+  width: 1184px;
+  padding: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  text-decoration: none;
+}
+.logo-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+.logo-heading {
+  color: var(--Black, #191825);
+  font-family: Circular Std Book;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+}
+.link a {
+  color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+  font-family: Circular Std Book;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.link a:hover {
+  color: black;
+}
+.nav-list a {
+  text-decoration: none;
+}
+
+.button-group {
+  display: flex;
+  align-items: flex-start;
+}
+.login-button {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 8px;
+  border: none;
+  border-radius: 100px;
+  background: var(--white, #fff);
+  color: var(--Dark, #222831);
+  font-family: Circular Std Book;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.login-button:hover {
+  background-color: whitesmoke;
+}
+.signup-button {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--Primary, #5d50c6);
+  color: var(--Light, #eee);
+  font-family: Circular Std Book;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  box-shadow: none;
+  border: none;
+}
+.signup-button:hover {
+  opacity: 0.8;
+}
+/* End Header */
+
+/* Start Main */
+
+/* Explore the world */
+
+.explore-the-world-content {
+  display: flex;
+  width: 1184px;
+  padding: 64px 0px;
+  align-items: center;
+
+  .explore-the-world-container {
     display: flex;
-    width: 1184px;
-    padding: 32px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    align-items: center;
-    gap: 16px;
-    display: flex;
-    text-decoration: none;
-  }
-  .logo-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  .logo-image {
-    width: 40px;
-    height: 40px;
-  }
-  .logo-heading {
-    color: var(--Black, #191825);
-    font-family: Circular Std Book;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 40px;
-  }
-  
-  .nav-list {
-    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 64px;
+    gap: 43px;
+    flex-shrink: 1 0 0;
+    width: 412px;
   }
-  .link a {
-    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+  .explore-the-world-item {
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
+      0px 34px 75px 0px rgba(0, 0, 0, 0.07),
+      0px 137px 137px 0px rgba(0, 0, 0, 0.06),
+      0px 308px 185px 0px rgba(0, 0, 0, 0.04),
+      0px 548px 219px 0px rgba(0, 0, 0, 0.01),
+      0px 856px 240px 0px rgba(0, 0, 0, 0);
+  }
+  .explore-the-world-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--Secondary, #f85e9f);
     font-family: Circular Std Book;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    border: none;
+    background-color: white;
   }
-  .link a:hover {
-    color: black;
+  .explore-the-world-btn:hover {
+    opacity: 0.8;
   }
-  .nav-list a {
-    text-decoration: none;
+  .explore-the-world-logo {
+    width: 24px;
+    height: 24px;
   }
-  
-  .button-group {
+  .travel-top-title {
+    align-self: stretch;
+    color: #000;
+    font-family: Circular Std Book;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .change-color {
+    color: var(--Secondary, #f85e9f);
+    font-family: Circular Std Book;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .travel-top-description {
+    align-self: stretch;
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+    font-family: Circular Std Book;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .explore-the-world-item-btn {
     display: flex;
     align-items: flex-start;
+    gap: 16px;
   }
-  .login-button {
+  .get-started-btn {
     display: flex;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 8px;
     border: none;
     border-radius: 100px;
+    background: var(--Primary, #5d50c6);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+      0px 5px 11px 0px rgba(0, 0, 0, 0.1), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
+      0px 45px 27px 0px rgba(0, 0, 0, 0.05),
+      0px 81px 32px 0px rgba(0, 0, 0, 0.01), 0px 126px 35px 0px rgba(0, 0, 0, 0);
+    color: var(--Light, #eee);
+    font-family: Circular Std Book;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .get-started-btn:hover {
+    opacity: 0.8;
+  }
+  .watch-demo-btn {
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--Light, #eee);
     background: var(--white, #fff);
     color: var(--Dark, #222831);
     font-family: Circular Std Book;
@@ -75,26 +219,65 @@
     font-weight: 700;
     line-height: 120%;
   }
-  .login-button:hover {
+  .logo-watch-demo {
+    width: 24px;
+    height: 24px;
+  }
+  .watch-demo-btn:hover {
     background-color: whitesmoke;
   }
-  .signup-button {
-    display: flex;
-    padding: 16px 32px;
-    align-items: flex-start;
-    gap: 8px;
-    border-radius: 100px;
-    background: var(--Primary, #5d50c6);
-    color: var(--Light, #eee);
-    font-family: Circular Std Book;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    box-shadow: none;
-    border: none;
+}
+.explore-the-world-position {
+  width: 772px;
+  height: 713px;
+  position: relative;
+}
+.earth-background {
+  width: 772px;
+  height: 713px;
+  flex-shrink: 0;
+}
+.earth-image {
+  width: 772px;
+  height: 287.383px;
+  flex-shrink: 0;
+}
+.check-in-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 31px;
+  position: absolute;
+  left: 91px;
+  top: 75px;
+}
+.check-in-item-group-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  .check-in-item-group-image-1 {
+    width: 272px;
+    height: 300px;
   }
-  .signup-button:hover {
-    opacity: 0.8;
-  }
-  /* End Header */  
+}
+.check-in-item-group-image-2 {
+  width: 272px;
+  height: 400px;
+}
+.plane-frame {
+  position: absolute;
+  left: 30px;
+  top: 340px;
+}
+.add-fr-frame {
+  position: absolute;
+  top: 650px;
+  left: 440px;
+}
+.top-place-frame {
+  position: absolute;
+  top: 485px;
+  left: 550px;
+}
+
+/* End Explore the world */
