@@ -281,3 +281,33 @@
 }
 
 /* End Explore the world */
+
+/* Foundation */
+
+.foundation-content {
+  display: flex;
+  width: 1184px;
+  padding: 64px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.tripad-logo-image {
+  width: 211.827px;
+  height: 32px;
+}
+.expedia-logo-image {
+  width: 113.062px;
+  height: 32px;
+}
+.booking-logo {
+  width: 188.604px;
+  height: 32px;
+}
+.airbnb-logo-image {
+  width: 102.534px;
+  height: 32px;
+}
+.rbitz-logo-image {
+  width: 173.565px;
+  height: 32px;
+}
