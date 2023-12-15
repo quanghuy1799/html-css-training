@@ -3,3 +3,4 @@ build
 dist
 .parcel-cache
 backup.css
+backuphtml.html
