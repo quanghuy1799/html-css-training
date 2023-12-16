@@ -550,12 +550,12 @@
   gap: 16px;
   align-self: stretch;
 }
-.option-name {
+.option-name-item {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
 }
-.option-name-child {
+.option-name-title {
   flex: 1 0 0;
   color: var(--grey-scale-black, #191825);
   font-family: Circular Std Book;
