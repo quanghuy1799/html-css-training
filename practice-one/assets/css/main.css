@@ -373,7 +373,6 @@
 }
 .service-card-item {
   display: flex;
-  height: 443px;
   padding: 64px;
   flex-direction: column;
   align-items: center;
