@@ -402,7 +402,7 @@
   align-self: stretch;
   color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
   text-align: center;
-  font-family: Circular Std Book;
+  font-family: 'inter';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -575,7 +575,7 @@
 .location {
   align-self: stretch;
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
-  font-family: Circular Std Book;
+  font-family: inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -613,11 +613,12 @@
   margin-left: -128px;
   position: relative;
 }
-.travelpoint-image {
+.travelpoint-image-item{
   width: 871px;
   height: 697px;
   flex-shrink: 0;
 }
+
 .travelepoint-title-item {
   display: flex;
   flex-direction: column;
@@ -692,13 +693,7 @@
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
   background: var(--white, #fff);
 }
-.statistical-child1 {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-.statistical-child2 {
+.statistical-child {
   display: flex;
   align-items: flex-start;
   gap: 32px;
