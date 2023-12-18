@@ -601,3 +601,133 @@
 }
 
 /* End Top DESTINATION section */
+
+/* Travel Point section */
+
+.travelepoint-content {
+  display: flex;
+  width: 1312px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  align-items: flex-end;
+  margin-left: -128px;
+  position: relative;
+}
+.travelpoint-image {
+  width: 871px;
+  height: 697px;
+  flex-shrink: 0;
+}
+.travelepoint-title-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex: 1 0 0;
+}
+.travlepoint-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.travlepoint-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.travelpoint {
+  align-self: stretch;
+  color: var(--Secondary, #f85e9f);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}
+.travelpoint-about {
+  align-self: stretch;
+  color: var(--grey-scale-black, #191825);
+  font-family: Circular Std Book;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.travelpoint-about-child {
+  align-self: stretch;
+  color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+  font-family: inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.statistical-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.statistical-child1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.statistical-frame {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 32px;
+  border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
+  background: var(--white, #fff);
+}
+.statistical-child1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.statistical-child2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.count-title {
+  color: var(--Orange, #ff5722);
+  font-family: Circular Std Book;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.statistical-name {
+  color: var(--grey-scale-black, #191825);
+  font-family: inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.travel-point-ticket-logo {
+  position: absolute;
+  left: 1160px;
+  top: 290px;
+  width: 277px;
+  height: 353px;
+  flex-shrink: 0;
+}
+
+/* End Travel Point section */
