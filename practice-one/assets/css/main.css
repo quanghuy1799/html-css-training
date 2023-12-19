@@ -171,7 +171,7 @@
   .travel-top-description {
     align-self: stretch;
     color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
-    font-family: Circular Std Book;
+    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -318,7 +318,6 @@
 
 .service-content {
   display: flex;
-  width: 1536px;
   padding-top: 64px;
   padding-bottom: 64px;
   align-items: center;
@@ -351,12 +350,13 @@
   font-weight: 700;
   line-height: 120%;
 }
-.service-bar {
-  display: flex;
-  width: 1092px;
+.service-bar-item {
   align-items: flex-start;
   gap: 21px;
   flex-shrink: 0;
+  overflow: clip;
+  overflow-clip-margin: 130px;
+  width: 740px;
 }
 .service-card {
   display: flex;
@@ -370,7 +370,8 @@
 }
 .service-card-item {
   display: flex;
-  height: 443px;
+  width: 222px;
+  height: 315px;
   padding: 64px;
   flex-direction: column;
   align-items: center;
@@ -379,9 +380,6 @@
   border-radius: 32px;
   border: 1px solid rgba(25, 24, 37, 0.1);
   background: #fff;
-}
-.service-card:hover {
-  box-shadow: whitesmoke;
 }
 .card-logo {
   width: 64px;
@@ -402,7 +400,7 @@
   align-self: stretch;
   color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
   text-align: center;
-  font-family: Circular Std Book;
+  font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -600,4 +598,325 @@
   height: 23px;
 }
 
+/* End Service section */
+
+/* Top Destination section */
+
+.topdestination-content {
+  display: flex;
+  width: 1184px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.topdestination-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
+}
+.topdestination-title-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.topdestination-title {
+  align-self: stretch;
+  color: var(--Secondary, #f85e9f);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}
+.description-topdestination {
+  align-self: stretch;
+  color: var(--grey-scale-black, #191825);
+  font-family: Circular Std Book;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.slide-button {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.previous-btn {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
+  background: var(--white, #fff);
+}
+.left {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.previous-btn:hover {
+  background-color: whitesmoke;
+}
+.next-btn {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--Primary, #5d50c6);
+  border: none;
+}
+.right {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.next-btn:hover {
+  opacity: 0.8;
+}
+.tour-option {
+  display: flex;
+  width: 1184px;
+  padding: 64px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.tour-option-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.option-image {
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 32px 32px 0px 0px;
+}
+.option-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 0px 0px 32px 32px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+    0px 32px 71px 0px rgba(0, 0, 0, 0.05),
+    0px 128px 128px 0px rgba(0, 0, 0, 0.04),
+    0px 288px 173px 0px rgba(0, 0, 0, 0.03),
+    0px 513px 205px 0px rgba(0, 0, 0, 0.01),
+    0px 801px 224px 0px rgba(0, 0, 0, 0);
+}
+.option-description {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 0px 0px 32px 32px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+    0px 32px 71px 0px rgba(0, 0, 0, 0.05),
+    0px 128px 128px 0px rgba(0, 0, 0, 0.04),
+    0px 288px 173px 0px rgba(0, 0, 0, 0.03),
+    0px 513px 205px 0px rgba(0, 0, 0, 0.01),
+    0px 801px 224px 0px rgba(0, 0, 0, 0);
+}
+.option-description-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.option-name-item {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.option-name-title {
+  flex: 1 0 0;
+  color: var(--grey-scale-black, #191825);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.option-price {
+  color: var(--Secondary, #f85e9f);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.location {
+  align-self: stretch;
+  color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
+  font-family: inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.rate-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+.rate-point {
+  color: var(--Orange, #ff5722);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.star-icon {
+  width: 23px;
+  height: 23px;
+}
+
 /* End Top DESTINATION section */
+
+/* Travel Point section */
+
+.travelepoint-content {
+  display: flex;
+  width: 1184px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  align-items: flex-end;
+  position: relative;
+  justify-content: flex-end;
+}
+.travelpoint-image-item {
+  width: 920px;
+  height: 671px;
+  flex-shrink: 0;
+}
+.travelpoint-image {
+  width: -200%;
+  height: 697px;
+}
+
+.travelepoint-title-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex: 1 0 0;
+  min-width: 441px;
+}
+.travlepoint-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.travlepoint-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.travelpoint {
+  align-self: stretch;
+  color: var(--Secondary, #f85e9f);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}
+.travelpoint-about {
+  align-self: stretch;
+  color: var(--grey-scale-black, #191825);
+  font-family: Circular Std Book;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.travelpoint-about-child {
+  align-self: stretch;
+  color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+  font-family: inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.statistical-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.statistical-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.statistical-frame {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 32px;
+  border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
+  background: var(--white, #fff);
+}
+.statistical-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.count-title {
+  color: var(--Orange, #ff5722);
+  font-family: Circular Std Book;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.statistical-name {
+  color: var(--grey-scale-black, #191825);
+  font-family: inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.travel-point-ticket-logo {
+  position: absolute;
+  left: 1035px;
+  top: 260px;
+  width: 277px;
+  height: 353px;
+  flex-shrink: 0;
+}
+
+/* End Travel Point section */
