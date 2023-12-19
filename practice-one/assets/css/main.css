@@ -920,3 +920,261 @@
 }
 
 /* End Travel Point section */
+
+/* Key features */
+
+.keyfeatures-content {
+  display: flex;
+  width: 1140px;
+  padding: 64px 0;
+  align-items: flex-start;
+  gap: 70px;
+}
+.keyfeatures-container {
+  display: table-row;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  flex: 1 0 0;
+  min-width: 549px;
+}
+.keyfeatures-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.keyfeatures-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.keyfeatures-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+.keyfeatures {
+  align-self: stretch;
+  color: var(--Secondary, #f85e9f);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}
+.keyfeatures-description {
+  align-self: stretch;
+  color: var(--grey-scale-black, #191825);
+  font-family: Circular Std Book;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.keyfeatures-about-desciption {
+  align-self: stretch;
+  color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+  font-family: inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.benifit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.benifit-description {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+}
+.rectangle-frame-location {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: var(--Orange, #ff5722);
+  .benifit-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    padding: 26px;
+  }
+}
+.rectangle-frame-calendar {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: var(--Yellow, #facd49);
+  .benifit-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    padding: 26px;
+  }
+}
+.rectangle-frame-ticket {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: var(--Secondary, #f85e9f);
+  .benifit-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    padding: 26px;
+  }
+}
+.benifit-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  .benifit-title-child {
+    align-self: stretch;
+    color: var(--grey-scale-black, #191825);
+    font-family: Circular Std Book;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .benifit-title-description {
+    align-self: stretch;
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
+    font-family: Circular Std Book;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+.benifit-backgound {
+  width: 693px;
+  height: 869px;
+  flex-shrink: 0;
+}
+
+/* Testimonials */
+
+.testimonials-content {
+  width: 1184px;
+  align-items: center;
+  gap: 56px;
+  position: relative;
+}
+.testimonials-background {
+  opacity: 0.1;
+  position:absolute;
+  top: -330px;
+  left: -180px;
+}
+.testimonials-background-image {
+  width: 1532px;
+}
+.testimonials-content-item{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 220px;
+}
+.testimonials-content-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  flex: 1 0 0;
+}
+.testimonials-content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  .testimonials {
+    align-self: stretch;
+    color: var(--Secondary, #f85e9f);
+    text-align: center;
+    font-family: Circular Std Book;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+  }
+  .testimonials-title {
+    align-self: stretch;
+    color: var(--grey-scale-black, #191825);
+    text-align: center;
+    font-family: Circular Std Book;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+.rate-star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  align-self: stretch;
+  text-align: center;
+  font-family: Circular Std Book;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
+}
+.marksmith::before {
+  content: "Mark Smith";
+  position: absolute;
+  color: var(--Orange, #ff5722);
+}
+.five-star {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.testimonials-content-description {
+  align-self: stretch;
+  color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
+  text-align: center;
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 160%;
+}
+.slide {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  .slide-logo {
+    width: 24px;
+    height: 24px;
+  }
+}
