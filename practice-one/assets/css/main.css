@@ -171,7 +171,7 @@
   .travel-top-description {
     align-self: stretch;
     color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
-    font-family: Circular Std Book;
+    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -355,8 +355,8 @@
   gap: 21px;
   flex-shrink: 0;
   overflow: clip;
-    overflow-clip-margin: 130px;
-    width: 740px;
+  overflow-clip-margin: 130px;
+  width: 740px;
 }
 .service-card {
   display: flex;
@@ -367,11 +367,11 @@
   border-radius: 32px;
   border: none;
   background: #fff;
-  
 }
 .service-card-item {
   display: flex;
-  height: 443px;
+  width: 222px;
+  height: 315px;
   padding: 64px;
   flex-direction: column;
   align-items: center;
@@ -380,9 +380,6 @@
   border-radius: 32px;
   border: 1px solid rgba(25, 24, 37, 0.1);
   background: #fff;
-}
-.service-card:hover {
-  box-shadow: whitesmoke;
 }
 .card-logo {
   width: 64px;
@@ -403,7 +400,7 @@
   align-self: stretch;
   color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.5));
   text-align: center;
-  font-family: Circular Std Book;
+  font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -600,7 +597,6 @@
   width: 23px;
   height: 23px;
 }
-
 
 /* End Service section */
 
@@ -799,17 +795,21 @@
 
 .travelepoint-content {
   display: flex;
-  width: 1312px;
+  width: 1184px;
   padding-top: 64px;
   padding-bottom: 64px;
   align-items: flex-end;
-  margin-left: -128px;
   position: relative;
+  justify-content: flex-end;
 }
-.travelpoint-image-item{
-  width: 871px;
-  height: 697px;
+.travelpoint-image-item {
+  width: 920px;
+  height: 671px;
   flex-shrink: 0;
+}
+.travelpoint-image {
+  width: -200%;
+  height: 697px;
 }
 
 .travelepoint-title-item {
@@ -818,6 +818,7 @@
   align-items: flex-start;
   gap: 64px;
   flex: 1 0 0;
+  min-width: 441px;
 }
 .travlepoint-title {
   display: flex;
@@ -869,7 +870,7 @@
   gap: 32px;
   align-self: stretch;
 }
-.statistical-child1 {
+.statistical-child {
   display: flex;
   align-items: flex-start;
   gap: 32px;
@@ -911,8 +912,8 @@
 
 .travel-point-ticket-logo {
   position: absolute;
-  left: 1160px;
-  top: 290px;
+  left: 1035px;
+  top: 260px;
   width: 277px;
   height: 353px;
   flex-shrink: 0;
