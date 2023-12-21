@@ -1,5 +1,4 @@
 .container {
-  background: #fff;
   margin: 0 auto;
   width: 1184px;
 }
@@ -325,7 +324,7 @@
   align-items: flex-start;
   gap: 16px;
   flex: 1 0 0;
-  width: 444px;
+  min-width: 444px;
 }
 .service-head-title {
   align-self: stretch;
@@ -351,9 +350,8 @@
   align-items: flex-start;
   gap: 21px;
   flex-shrink: 0;
-  overflow: clip;
-  overflow-clip-margin: 130px;
   width: 740px;
+  overflow: auto;
 }
 .service-card {
   display: flex;
@@ -451,7 +449,7 @@
 }
 .slide-button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 .previous-btn {
@@ -640,7 +638,7 @@
 }
 .slide-button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 .previous-btn {
@@ -791,25 +789,23 @@
   padding-top: 64px;
   padding-bottom: 64px;
   align-items: flex-end;
-  position: relative;
+  position: static;
   justify-content: flex-end;
 }
 .travelpoint-image-item {
-  width: 920px;
   height: 671px;
   flex-shrink: 0;
+  position: absolute;
+  left: 0;
 }
-/* .travelpoint-image {
-  height: 697px;
-} */
-
 .travelepoint-title-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
   flex: 1 0 0;
-  min-width: 441px;
+  max-width: 441px;
+  position: relative;
 }
 .travlepoint-title {
   display: flex;
@@ -903,8 +899,8 @@
 
 .travel-point-ticket-logo {
   position: absolute;
-  left: 1035px;
-  top: 260px;
+  left: 290px;
+  top: 140px;
   width: 277px;
   height: 353px;
   flex-shrink: 0;
@@ -1067,27 +1063,23 @@
 /* Testimonials */
 
 .testimonials-content {
+  display: flex;
   align-items: center;
   gap: 56px;
-  height: 900px;
   position: relative;
+  padding-bottom: 177px;
 }
-.testimonials-background {
-  opacity: 0.1;
-  position: relative;
-  top: -330px;
-  left: -180px;
-}
+
 .testimonials-background-image {
-  width: 1532px;
+  width: 100%;
+  opacity: 0.1;
+  position: absolute;
+  top: 4050px;
 }
 .testimonials-content-item {
   display: flex;
-
   align-items: center;
-  position: absolute;
-  top: 10px;
-  left: 220px;
+  justify-content: center;
 }
 .testimonials-content-child {
   display: flex;
@@ -1278,10 +1270,10 @@
 .subscribe-email-btn:hover {
   opacity: 0.8;
 }
-.subcribe-vector-image{
+.vector-image {
   position: absolute;
-  left: 1240px;
-  top: 450px;
+  top: 5600px;
+  right: 0;
 }
 
 /* Footer */
