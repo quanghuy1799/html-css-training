@@ -26,6 +26,9 @@
   width: 40px;
   height: 40px;
 }
+.logo :hover {
+  opacity: 0.8;
+}
 .logo-heading {
   color: var(--Black, #191825);
   font-family: Circular Std Book;
@@ -71,6 +74,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  cursor: pointer;
 }
 .login-button:hover {
   background-color: whitesmoke;
@@ -90,6 +94,7 @@
   line-height: 120%;
   box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 .signup-button:hover {
   opacity: 0.8;
@@ -121,12 +126,16 @@
     gap: 16px;
     border-radius: 100px;
     background: #fff;
+    cursor: pointer;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
       0px 34px 75px 0px rgba(0, 0, 0, 0.07),
       0px 137px 137px 0px rgba(0, 0, 0, 0.06),
       0px 308px 185px 0px rgba(0, 0, 0, 0.04),
       0px 548px 219px 0px rgba(0, 0, 0, 0.01),
       0px 856px 240px 0px rgba(0, 0, 0, 0);
+  }
+  .explore-the-world-item :hover{
+    opacity: 0.8;
   }
   .explore-the-world-btn {
     display: flex;
@@ -140,10 +149,11 @@
     line-height: 120%;
     border: none;
     background-color: white;
+    cursor: pointer;
   }
-  .explore-the-world-btn:hover {
+  /* .explore-the-world-btn:hover {
     opacity: 0.8;
-  }
+  } */
   .explore-the-world-logo {
     width: 24px;
     height: 24px;
@@ -197,6 +207,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    cursor: pointer;
   }
   .get-started-btn:hover {
     opacity: 0.8;
@@ -215,6 +226,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    cursor: pointer;
   }
   .logo-watch-demo {
     width: 24px;
@@ -459,6 +471,7 @@
   border-radius: 100px;
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
   background: var(--white, #fff);
+  cursor: pointer;
 }
 .left {
   width: 24px;
@@ -475,6 +488,7 @@
   border-radius: 100px;
   background: var(--Primary, #5d50c6);
   border: none;
+  cursor: pointer;
 }
 .right {
   width: 24px;
@@ -743,6 +757,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  text-decoration: none;
 }
 .option-price {
   color: var(--Secondary, #f85e9f);
@@ -789,13 +804,11 @@
   padding-top: 64px;
   padding-bottom: 64px;
   align-items: flex-end;
-  position: static;
   justify-content: flex-end;
 }
 .travelpoint-image-item {
   height: 671px;
   flex-shrink: 0;
-  position: absolute;
   left: 0;
 }
 .travelepoint-title-item {
@@ -804,7 +817,7 @@
   align-items: flex-start;
   gap: 64px;
   flex: 1 0 0;
-  max-width: 441px;
+  min-width: 441px;
   position: relative;
 }
 .travlepoint-title {
@@ -975,13 +988,11 @@
   font-weight: 400;
   line-height: 160%;
 }
-.benifit {
+.benifit-list-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
 }
-.benifit-description {
+.benifit-list {
   display: flex;
   padding: 32px;
   align-items: center;
@@ -989,6 +1000,17 @@
   align-self: stretch;
   border-radius: 32px;
   background: var(--white, #fff);
+}
+
+.benifit-list-calendar {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 32px;
+  background: var(--white, #fff);
+  border: 1px solid var(--Grey-Scale-Black-10, rgba(25, 24, 37, 0.1));
 }
 .rectangle-frame-location {
   width: 100px;
@@ -1029,13 +1051,13 @@
     padding: 26px;
   }
 }
-.benifit-title {
+.benifit-title-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   flex: 1 0 0;
-  .benifit-title-child {
+  .benifit-title {
     align-self: stretch;
     color: var(--grey-scale-black, #191825);
     font-family: Circular Std Book;
@@ -1064,22 +1086,16 @@
 
 .testimonials-content {
   display: flex;
-  align-items: center;
-  gap: 56px;
-  position: relative;
+  position: static;
   padding-bottom: 177px;
+  position: relative;
 }
-
 .testimonials-background-image {
-  width: 100%;
-  opacity: 0.1;
   position: absolute;
-  top: 4050px;
-}
-.testimonials-content-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: -1;
+  opacity: 0.1;
+  top: -330px;
+  left: -130px;
 }
 .testimonials-content-child {
   display: flex;
@@ -1167,7 +1183,8 @@
 
 .subcribe-content {
   display: flex;
-  width: 1056px 352px;
+  width: 1056px;
+  height: 352px;
   padding: 128px 64px;
   flex-direction: column;
   align-items: flex-start;
@@ -1252,6 +1269,7 @@
   border: none;
   width: 500px;
   height: 28px;
+  cursor: pointer;
 }
 .subscribe-email-btn {
   height: 96px;
@@ -1266,14 +1284,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  cursor: pointer;
 }
 .subscribe-email-btn:hover {
   opacity: 0.8;
 }
 .vector-image {
   position: absolute;
-  top: 5600px;
-  right: 0;
+  right: -150px;
+  bottom: -180px;
 }
 
 /* Footer */
@@ -1291,17 +1310,14 @@
   gap: 64px;
   flex: 1 0 0;
 }
-.aboutus {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 16px;
+  text-decoration: none;
+}
+.footer-logo :hover{
+  opacity: 0.8;
 }
 .logo-footer {
   width: 40px;
@@ -1330,9 +1346,12 @@
   align-items: flex-start;
   gap: 32px;
 }
-.logo-social {
+.logo-image {
   width: 32px;
   height: 32px;
+}
+.social-logo a:hover{
+  opacity: 0.8;
 }
 .info {
   display: flex;
@@ -1340,7 +1359,7 @@
   gap: 32px;
   flex: 1 0 0;
 }
-.company {
+.info-title{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1366,27 +1385,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  text-decoration: none;
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-}
-.meet-us {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
-}
-.adress {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
+.info-title a:hover{
+  text-decoration: underline;
 }
 .adress-child {
   align-self: stretch;
