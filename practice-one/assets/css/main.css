@@ -134,7 +134,7 @@
       0px 548px 219px 0px rgba(0, 0, 0, 0.01),
       0px 856px 240px 0px rgba(0, 0, 0, 0);
   }
-  .explore-the-world-item :hover{
+  .explore-the-world-item :hover {
     opacity: 0.8;
   }
   .explore-the-world-btn {
@@ -1316,7 +1316,7 @@
   gap: 16px;
   text-decoration: none;
 }
-.footer-logo :hover{
+.footer-logo :hover {
   opacity: 0.8;
 }
 .logo-footer {
@@ -1350,7 +1350,7 @@
   width: 32px;
   height: 32px;
 }
-.social-logo a:hover{
+.social-logo a:hover {
   opacity: 0.8;
 }
 .info {
@@ -1359,7 +1359,7 @@
   gap: 32px;
   flex: 1 0 0;
 }
-.info-title{
+.info-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1387,7 +1387,7 @@
   line-height: 160%;
   text-decoration: none;
 }
-.info-title a:hover{
+.info-title a:hover {
   text-decoration: underline;
 }
 .adress-child {
