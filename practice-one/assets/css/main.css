@@ -904,7 +904,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
-  flex: 1 0 0;
   min-width: 549px;
 }
 .keyfeatures-header {
@@ -1019,7 +1018,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  flex: 1 0 0;
   .benifit-title-item {
     align-self: stretch;
     color: var(--grey-scale-black, #191825);
@@ -1210,34 +1208,30 @@
 .email {
   display: flex;
   padding: 32px;
-  align-items: center;
   gap: 16px;
-  flex: 1 0 0;
-  align-self: stretch;
   border-radius: 32px;
   background: var(--white, #fff);
-  width: 776px;
 }
 .letter-logo {
   width: 32px;
   height: 32px;
 }
-.your-email {
+.type-email {
+  border: none;
+  width: 600px;
+  cursor: pointer;
+}
+.email ::placeholder {
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
-  text-align: center;
   font-family: Circular Std Book;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%;
+  line-height: 130%;
+  text-align: left;
 }
-.type-email {
-  border: none;
-  width: 600px;
-  height: 28px;
-  cursor: pointer;
-}
-.email-input ::placeholder {
+.email :focus {
+  outline: none;
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
   text-align: center;
   font-family: Circular Std Book;
@@ -1279,12 +1273,16 @@
   align-items: flex-start;
   gap: 64px;
 }
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .social {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
-  flex: 1 0 0;
 }
 .footer-logo {
   display: flex;
@@ -1332,15 +1330,14 @@
 .info {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
   flex: 1 0 0;
+  gap: 32px;
 }
 .info-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
 }
 .company-title,
 .contact-title,
