@@ -116,7 +116,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 43px;
-    flex-shrink: 1 0 0;
     width: 412px;
   }
   .explore-the-world-btn {
@@ -234,12 +233,10 @@
 .earth-background {
   width: 772px;
   height: 713px;
-  flex-shrink: 0;
 }
 .earth-image {
   width: 772px;
   height: 287.383px;
-  flex-shrink: 0;
 }
 .check-in-item {
   display: inline-flex;
@@ -325,7 +322,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  flex: 1 0 0;
   min-width: 444px;
 }
 .service-head-title {
@@ -369,7 +365,6 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  flex: 1 0 0;
   border-radius: 32px;
   border: 1px solid rgba(25, 24, 37, 0.1);
   background: #fff;
@@ -377,7 +372,6 @@
 .card-logo {
   width: 64px;
   height: 64px;
-  flex-shrink: 0;
 }
 .card-tag {
   align-self: stretch;
@@ -427,7 +421,6 @@
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 4.6px;
-  text-transform: uppercase;
 }
 .description-top-destination {
   align-self: stretch;
@@ -446,7 +439,6 @@
 .previous-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
   border-radius: 100px;
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
   background: var(--white, #fff);
@@ -455,7 +447,6 @@
 .left {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .previous-btn:hover {
   background-color: whitesmoke;
@@ -463,7 +454,6 @@
 .next-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
   border-radius: 100px;
   background: var(--Primary, #5d50c6);
   border: none;
@@ -472,7 +462,6 @@
 .right {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .next-btn:hover {
   opacity: 0.8;
@@ -492,7 +481,6 @@
 }
 
 .option-image {
-  flex: 1 0 0;
   align-self: stretch;
   border-radius: 32px 32px 0px 0px;
 }
@@ -543,7 +531,6 @@
   text-decoration: underline;
 }
 .option-name-title {
-  flex: 1 0 0;
   color: var(--grey-scale-black, #191825);
   font-family: Circular Std Book;
   font-size: 23px;
@@ -621,7 +608,6 @@
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 4.6px;
-  text-transform: uppercase;
 }
 .description-topdestination {
   align-self: stretch;
@@ -648,7 +634,6 @@
 .left {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .previous-btn:hover {
   background-color: whitesmoke;
@@ -656,7 +641,6 @@
 .next-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
   border-radius: 100px;
   background: var(--Primary, #5d50c6);
   border: none;
@@ -664,7 +648,6 @@
 .right {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .next-btn:hover {
   opacity: 0.8;
@@ -677,7 +660,6 @@
 }
 
 .option-image {
-  flex: 1 0 0;
   align-self: stretch;
   border-radius: 32px 32px 0px 0px;
 }
@@ -725,7 +707,6 @@
   align-self: stretch;
 }
 .option-name-title {
-  flex: 1 0 0;
   color: var(--grey-scale-black, #191825);
   font-family: Circular Std Book;
   font-size: 23px;
@@ -1040,7 +1021,6 @@
 .benifit-backgound {
   width: 693px;
   height: 869px;
-  flex-shrink: 0;
 }
 
 /* Testimonials */
@@ -1066,7 +1046,6 @@
   flex-direction: column;
   align-items: center;
   gap: 56px;
-  flex: 1 0 0;
 }
 .testimonials-content-header {
   display: flex;
@@ -1265,13 +1244,14 @@
 .vector-image {
   position: absolute;
   right: -16px;
-  bottom: 300px;
+  bottom: 280px;
 }
 .footer-container {
-  display: flex;
-  padding: 64px 0px;
   align-items: flex-start;
   gap: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  padding-top: 128px;
 }
 .footer-header {
   display: flex;
