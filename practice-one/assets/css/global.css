@@ -24,11 +24,6 @@ body {
 }
 
 :root {
-  /* fonts */
-  --body: Inter;
-  --font-family: Circular Std;
-  font-family: Circular Std;
-
   /* font sizes */
   --body-size: 18px;
   --h6-size: 23px;
