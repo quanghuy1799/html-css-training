@@ -6,7 +6,9 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
+main {
+  padding-bottom: 64px;
+}
 :root {
   /* fonts */
   --body: Inter;
