@@ -418,7 +418,7 @@
   align-self: stretch;
   justify-content: space-between;
 }
-.top-destination-title {
+.top-destination {
   align-self: stretch;
   color: var(--Secondary, #f85e9f);
   font-family: Circular Std Book;
