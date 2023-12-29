@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  overflow-x: hidden;
+  position: relative;
+}
+main {
+  padding-bottom: 64px;
+}
+:root {
+  /* font sizes */
+  --body-size: 18px;
+  --title-size: 23px;
+  --description-size: 44px;
+  --button-size: 14px;
+
+  /* Colors */
+  --primary: #5d50c6;
+  --secondary: #f85e9f;
+  --background-color: #fff;
+  --description-color: #191825;
+  --border-color: rgba(25, 24, 37, 0.1);
+  --span-color: #ff5722;
+  --body-text-color: #393e46;
+}
+html,
+body {
+  font-family: Circular Std Book;
+  font-family: Inter;
+}
