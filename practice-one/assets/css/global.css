@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:wght@300&display=swap");
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -10,51 +26,23 @@ main {
   padding-bottom: 64px;
 }
 :root {
-  /* fonts */
-  --body: Inter;
-  --font-family: Circular Std;
-  font-family: Circular Std;
-
   /* font sizes */
   --body-size: 18px;
-  --h6-size: 23px;
-  --font-size-5xl: 24px;
-  --h2-size: 55px;
-  --h5-size: 28px;
-  --h3-size: 44px;
-  --h4-size: 35px;
+  --title-size: 23px;
+  --description-size: 44px;
   --button-size: 14px;
-  --h1-size: 69px;
 
   /* Colors */
-  --white: #fff;
-  --dark: #222831;
-  --grey-scale-black: #191825;
-  --grey-scale-black-10: rgba(25, 24, 37, 0.1);
-  --grey-scale-black-5: rgba(25, 24, 37, 0.05);
-  --grey-scale-black-50: rgba(25, 24, 37, 0.5);
-  --grey-scale-black-75: rgba(25, 24, 37, 0.75);
-  --yellow: #facd49;
   --primary: #5d50c6;
   --secondary: #f85e9f;
-  --orange: #ff5722;
-  --medium: #393e46;
-  --light: #eee;
-  --color-black: #000;
-
-  /* Gaps */
-  --gap-45xl: 64px;
-  --gap-13xl: 32px;
-  --gap-5xs: 8px;
-  --gap-base: 16px;
-  --gap-37xl: 56px;
-
-  /* Paddings */
-  --padding-45xl: 64px;
-  --padding-13xl: 32px;
-  --padding-base: 16px;
-
-  /* Border radiuses */
-  --br-13xl: 32px;
-  --br-81xl: 100px;
+  --background-color: #fff;
+  --description-color: #191825;
+  --border-color: rgba(25, 24, 37, 0.1);
+  --span-color: #ff5722;
+  --body-text-color: #393e46;
+}
+html,
+body {
+  font-family: Circular Std Book;
+  font-family: Inter;
 }
