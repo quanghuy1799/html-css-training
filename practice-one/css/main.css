@@ -418,7 +418,7 @@
   align-self: stretch;
   justify-content: space-between;
 }
-.top-destination-title {
+.top-destination {
   align-self: stretch;
   color: var(--Secondary, #f85e9f);
   font-family: Circular Std Book;
@@ -1265,7 +1265,7 @@
 .vector-image {
   position: absolute;
   right: -16px;
-  bottom: 300px;
+  bottom: 280px;
 }
 .footer-container {
   display: flex;
@@ -1320,9 +1320,18 @@
   align-items: flex-start;
   gap: 32px;
 }
-.logo-image {
+.social-logo a {
   width: 32px;
   height: 32px;
+}
+.logo-facebook {
+  background: url("../img/socical-logo-sprites.png") -64px 0;
+}
+.logo-twitter {
+  background: url("../img/socical-logo-sprites.png") 0 0;
+}
+.logo-insta {
+  background: url("../img/socical-logo-sprites.png") -32px 0;
 }
 .social-logo a:hover {
   opacity: 0.8;
