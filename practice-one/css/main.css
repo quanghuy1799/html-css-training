@@ -1303,13 +1303,13 @@
   height: 32px;
 }
 .logo-facebook {
-  background: url("../img/socical-logo-sprites.png") -64px 0;
+  background: url("../assets/images/socical-logo-sprites.png") -64px 0;
 }
 .logo-twitter {
-  background: url("../img/socical-logo-sprites.png") 0 0;
+  background: url("../assets/images/socical-logo-sprites.png") 0 0;
 }
 .logo-insta {
-  background: url("../img/socical-logo-sprites.png") -32px 0;
+  background: url("../assets/images/socical-logo-sprites.png") -32px 0;
 }
 .social-logo a:hover {
   opacity: 0.8;
