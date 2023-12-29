@@ -12,9 +12,9 @@
   align-items: center;
 }
 .logo {
+  display: flex;
   align-items: center;
   gap: 16px;
-  display: flex;
   text-decoration: none;
 }
 .logo-header {
@@ -30,8 +30,8 @@
   opacity: 0.8;
 }
 .logo-heading {
-  color: var(--Black, #191825);
   font-family: Circular Std Book;
+  color: var(--Black, #191825);
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -62,11 +62,9 @@
 }
 .login-button {
   display: flex;
-  padding: 16px 32px;
   align-items: flex-start;
+  padding: 16px 32px;
   gap: 8px;
-  border: none;
-  border-radius: 100px;
   background: var(--white, #fff);
   color: var(--Dark, #222831);
   font-family: Circular Std Book;
@@ -74,6 +72,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  border-radius: 100px;
+  border: none;
   cursor: pointer;
 }
 .login-button:hover {
@@ -81,10 +81,9 @@
 }
 .signup-button {
   display: flex;
-  padding: 16px 32px;
   align-items: flex-start;
+  padding: 16px 32px;
   gap: 8px;
-  border-radius: 100px;
   background: var(--Primary, #5d50c6);
   color: var(--Light, #eee);
   font-family: Circular Std Book;
@@ -92,8 +91,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  box-shadow: none;
+  border-radius: 100px;
   border: none;
+  box-shadow: none;
   cursor: pointer;
 }
 .signup-button:hover {
@@ -124,9 +124,7 @@
     padding: 16px 32px;
     align-items: center;
     gap: 16px;
-    border-radius: 100px;
     background: #fff;
-    cursor: pointer;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
       0px 34px 75px 0px rgba(0, 0, 0, 0.07),
       0px 137px 137px 0px rgba(0, 0, 0, 0.06),
@@ -139,7 +137,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    border-radius: 100px;
     border: none;
+    cursor: pointer;
   }
   .explore-the-world-b :hover {
     opacity: 0.8;
@@ -181,11 +181,10 @@
   }
   .get-started-btn {
     display: flex;
-    padding: 16px 32px;
     align-items: flex-start;
+    padding: 16px 32px;
     gap: 8px;
     border: none;
-    border-radius: 100px;
     background: var(--Primary, #5d50c6);
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
       0px 5px 11px 0px rgba(0, 0, 0, 0.1), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
@@ -197,6 +196,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    border-radius: 100px;
     cursor: pointer;
   }
   .get-started-btn:hover {
@@ -204,11 +204,9 @@
   }
   .watch-demo-btn {
     display: flex;
-    padding: 16px 32px;
     align-items: center;
+    padding: 16px 32px;
     gap: 8px;
-    border-radius: 100px;
-    border: 1px solid var(--Light, #eee);
     background: var(--white, #fff);
     color: var(--Dark, #222831);
     font-family: Circular Std Book;
@@ -216,6 +214,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    border-radius: 100px;
+    border: 1px solid var(--Light, #eee);
     cursor: pointer;
   }
   .logo-watch-demo {
@@ -234,12 +234,10 @@
 .earth-background {
   width: 772px;
   height: 713px;
-  flex-shrink: 0;
 }
 .earth-image {
   width: 772px;
   height: 287.383px;
-  flex-shrink: 0;
 }
 .check-in-item {
   display: inline-flex;
@@ -270,13 +268,13 @@
 }
 .add-fr-frame {
   position: absolute;
-  top: 650px;
   left: 440px;
+  top: 650px;
 }
 .top-place-frame {
   position: absolute;
-  top: 485px;
   left: 550px;
+  top: 485px;
 }
 
 /* End Explore the world section */
@@ -285,9 +283,9 @@
 
 .foundation-content {
   display: flex;
-  padding: 64px 0px;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 64px 0px;
 }
 .tripad-logo-image {
   width: 211.827px;
@@ -316,17 +314,17 @@
 
 .service-content {
   display: flex;
+  align-items: center;
   padding-top: 64px;
   padding-bottom: 64px;
-  align-items: center;
 }
 .service-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  flex: 1 0 0;
   min-width: 444px;
+  flex: 1 0 0;
 }
 .service-head-title {
   align-self: stretch;
@@ -352,32 +350,29 @@
   display: flex;
   align-items: flex-start;
   gap: 21px;
-  flex-shrink: 0;
   border: none;
   background: #fff;
   cursor: pointer;
-  overflow: hidden;
 }
 .service-card li:hover {
   background-color: whitesmoke;
 }
 .service-card-item {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 222px;
   height: 315px;
   padding: 64px;
-  flex-direction: column;
-  align-items: center;
   gap: 64px;
   flex: 1 0 0;
+  background: #fff;
   border-radius: 32px;
   border: 1px solid rgba(25, 24, 37, 0.1);
-  background: #fff;
 }
 .card-logo {
   width: 64px;
   height: 64px;
-  flex-shrink: 0;
 }
 .card-tag {
   align-self: stretch;
@@ -406,11 +401,11 @@
 
 .topdestination-content {
   display: flex;
-  padding-top: 64px;
-  padding-bottom: 64px;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .top-destination-item {
   display: flex;
@@ -446,16 +441,14 @@
 .previous-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
+  background: var(--white, #fff);
   border-radius: 100px;
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
-  background: var(--white, #fff);
   cursor: pointer;
 }
 .left {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .previous-btn:hover {
   background-color: whitesmoke;
@@ -463,32 +456,30 @@
 .next-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
-  border-radius: 100px;
   background: var(--Primary, #5d50c6);
+  border-radius: 100px;
   border: none;
   cursor: pointer;
 }
 .right {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .next-btn:hover {
   opacity: 0.8;
 }
 .tour-option {
   display: flex;
-  padding: 64px 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
+  padding: 64px 0px;
 }
 .tour-option-card {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 
 .option-image {
@@ -500,10 +491,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
-  border-radius: 0px 0px 32px 32px;
+  gap: 32px;
   background: #fff;
+  border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
     0px 32px 71px 0px rgba(0, 0, 0, 0.05),
     0px 128px 128px 0px rgba(0, 0, 0, 0.04),
@@ -513,13 +504,13 @@
 }
 .option-description {
   display: flex;
-  padding: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
-  border-radius: 0px 0px 32px 32px;
+  gap: 32px;
+  padding: 32px;
   background: #fff;
+  border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
     0px 32px 71px 0px rgba(0, 0, 0, 0.05),
     0px 128px 128px 0px rgba(0, 0, 0, 0.04),
@@ -531,8 +522,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   align-self: stretch;
+  gap: 16px;
 }
 .option-name-item {
   display: flex;
@@ -593,11 +584,11 @@
 
 .topdestination-content {
   display: flex;
-  padding-top: 64px;
-  padding-bottom: 64px;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .topdestination-container {
   display: flex;
@@ -640,15 +631,13 @@
 .previous-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
+  background: var(--white, #fff);
   border-radius: 100px;
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
-  background: var(--white, #fff);
 }
 .left {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .previous-btn:hover {
   background-color: whitesmoke;
@@ -656,15 +645,13 @@
 .next-btn {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
-  border-radius: 100px;
   background: var(--Primary, #5d50c6);
+  border-radius: 100px;
   border: none;
 }
 .right {
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
 }
 .next-btn:hover {
   opacity: 0.8;
@@ -672,23 +659,23 @@
 .tour-option-card {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 
 .option-image {
-  flex: 1 0 0;
   align-self: stretch;
   border-radius: 32px 32px 0px 0px;
+  flex: 1 0 0;
 }
 .option-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
-  border-radius: 0px 0px 32px 32px;
+  gap: 32px;
   background: #fff;
+  border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
     0px 32px 71px 0px rgba(0, 0, 0, 0.05),
     0px 128px 128px 0px rgba(0, 0, 0, 0.04),
@@ -698,13 +685,13 @@
 }
 .option-description {
   display: flex;
-  padding: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
-  border-radius: 0px 0px 32px 32px;
+  padding: 32px;
+  gap: 32px;
   background: #fff;
+  border-radius: 0px 0px 32px 32px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
     0px 32px 71px 0px rgba(0, 0, 0, 0.05),
     0px 128px 128px 0px rgba(0, 0, 0, 0.04),
@@ -716,8 +703,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   align-self: stretch;
+  gap: 16px;
 }
 .option-name-item {
   display: flex;
@@ -776,38 +763,38 @@
 
 .travelepoint-content {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   padding-top: 64px;
   padding-bottom: 64px;
-  align-items: flex-end;
-  justify-content: flex-end;
 }
 .travelpoint-image {
   position: absolute;
-  left: 0;
   height: 671px;
+  left: 0;
 }
 .travelepoint-title {
+  position: relative;
+  max-width: 441px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
   flex: 1 0 0;
-  max-width: 441px;
-  position: relative;
 }
 .travlepoint-title-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 .travlepoint-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   align-self: stretch;
+  gap: 16px;
 }
 .travelpoint {
   align-self: stretch;
@@ -842,25 +829,25 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 .statistical-list-item {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 .statistical-list {
   display: flex;
-  padding: 32px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  flex: 1 0 0;
+  padding: 32px;
+  background: var(--white, #fff);
   border-radius: 32px;
   border: 1px solid var(--grey-scale-black-10, rgba(25, 24, 37, 0.1));
-  background: var(--white, #fff);
+  flex: 1 0 0;
 }
 .count-title {
   color: var(--Orange, #ff5722);
@@ -881,10 +868,10 @@
 
 .travel-point-ticket-logo {
   position: absolute;
-  left: 290px;
-  top: 140px;
   width: 277px;
   height: 353px;
+  top: 140px;
+  left: 290px;
   flex-shrink: 0;
 }
 
@@ -893,39 +880,39 @@
 /* Key features */
 
 .keyfeatures-content {
-  display: flex;
   width: 1140px;
-  padding: 64px 0;
+  display: flex;
   align-items: flex-start;
+  padding: 64px 0;
   gap: 70px;
 }
 .keyfeatures-item {
-  display: table-row;
+  min-width: 549px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
-  min-width: 549px;
 }
 .keyfeatures-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 .keyfeatures-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   align-self: stretch;
+  gap: 16px;
 }
 .keyfeatures-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
   align-self: stretch;
+  gap: 16px;
 }
 .keyfeatures {
   align-self: stretch;
@@ -965,10 +952,10 @@
   display: flex;
   padding: 32px;
   align-items: center;
-  gap: 32px;
   align-self: stretch;
-  border-radius: 32px;
+  gap: 32px;
   background: var(--white, #fff);
+  border-radius: 32px;
   border: 1px solid transparent;
 }
 .benifit-item:hover {
@@ -977,39 +964,33 @@
 .rectangle-frame-location {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
-  border-radius: 32px;
   background: var(--Orange, #ff5722);
+  border-radius: 32px;
   .benifit-logo {
     width: 48px;
     height: 48px;
-    flex-shrink: 0;
     padding: 26px;
   }
 }
 .rectangle-frame-calendar {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
   border-radius: 32px;
   background: var(--Yellow, #facd49);
   .benifit-logo {
     width: 48px;
     height: 48px;
-    flex-shrink: 0;
     padding: 26px;
   }
 }
 .rectangle-frame-ticket {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
-  border-radius: 32px;
   background: var(--Secondary, #f85e9f);
+  border-radius: 32px;
   .benifit-logo {
     width: 48px;
     height: 48px;
-    flex-shrink: 0;
     padding: 26px;
   }
 }
@@ -1040,21 +1021,19 @@
 .benifit-backgound {
   width: 693px;
   height: 869px;
-  flex-shrink: 0;
 }
 
 /* Testimonials */
 
 .testimonials-content {
-  display: flex;
-  position: static;
-  padding-bottom: 177px;
   position: relative;
+  display: flex;
+  padding-bottom: 177px;
 }
 .testimonials-background-image {
   position: absolute;
-  z-index: -1;
   opacity: 0.1;
+  z-index: -1;
   top: -330px;
   width: 100%;
 }
@@ -1146,16 +1125,16 @@
 /* Subscribe to our newsletter */
 
 .subcribe-content {
-  display: flex;
+  position: relative;
   width: 1056px;
   height: 352px;
-  padding: 128px 64px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 128px 64px;
   gap: 64px;
-  border-radius: 32px;
   background: rgba(250, 205, 73, 0.08);
-  position: relative;
+  border-radius: 32px;
 }
 .subcribe-position {
   position: absolute;
@@ -1166,15 +1145,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 64px;
   align-self: stretch;
+  gap: 64px;
 }
 .subcribe-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   align-self: stretch;
+  gap: 32px;
 }
 .subcribe-text {
   align-self: stretch;
@@ -1199,26 +1178,26 @@
   line-height: 120%;
 }
 .input-subbtn {
+  width: 1056px;
   display: flex;
   align-items: flex-start;
-  width: 1056px;
-  gap: 64px;
   align-self: stretch;
+  gap: 64px;
 }
 .email {
   display: flex;
   padding: 32px;
   gap: 16px;
-  border-radius: 32px;
   background: var(--white, #fff);
+  border-radius: 32px;
 }
 .letter-logo {
   width: 32px;
   height: 32px;
 }
 .type-email {
-  border: none;
   width: 600px;
+  border: none;
   cursor: pointer;
 }
 .email ::placeholder {
@@ -1231,6 +1210,7 @@
   text-align: left;
 }
 .email :focus {
+  text-align: left;
   outline: none;
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
   text-align: center;
@@ -1239,13 +1219,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  text-align: left;
 }
 .subscribe-email-btn {
-  height: 96px;
   width: 235px;
-  border-radius: 32px;
-  border: none;
+  height: 96px;
   background: var(--Primary, #5d50c6);
   color: var(--white, #fff);
   text-align: center;
@@ -1254,6 +1231,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+  border-radius: 32px;
+  border: none;
   cursor: pointer;
 }
 .subscribe-email-btn:hover {
@@ -1269,8 +1248,8 @@
 }
 .footer-container {
   display: flex;
-  padding: 64px 0px;
   align-items: flex-start;
+  padding: 64px 0px;
   gap: 64px;
 }
 .footer-header {
@@ -1296,7 +1275,6 @@
 .logo-footer {
   width: 40px;
   height: 40px;
-  fill: var(--Gradient, linear-gradient(281deg, #5d50c6 7.11%, #f85e9f 93.54%));
 }
 .footer-travlog {
   color: var(--Black, #191825);
@@ -1339,15 +1317,15 @@
 .info {
   display: flex;
   align-items: flex-start;
-  flex: 1 0 0;
   gap: 32px;
+  flex: 1 0 0;
 }
 .info-title {
+  width: 165px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  width: 165px;
 }
 .company-title,
 .contact-title,
