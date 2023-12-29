@@ -1209,11 +1209,9 @@
   line-height: 130%;
   text-align: left;
 }
-.email :focus {
-  text-align: left;
+.email:focus {
   outline: none;
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
-  text-align: center;
   font-family: Circular Std Book;
   font-size: 23px;
   font-style: normal;
