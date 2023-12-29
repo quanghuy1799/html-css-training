@@ -1209,7 +1209,7 @@
   line-height: 130%;
   text-align: left;
 }
-.email :focus {
+.email:focus {
   outline: none;
   color: var(--grey-scale-black-75, rgba(25, 24, 37, 0.75));
   font-family: Circular Std Book;
