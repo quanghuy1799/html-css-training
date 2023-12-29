@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:wght@300&display=swap");
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -10,11 +26,6 @@ main {
   padding-bottom: 64px;
 }
 :root {
-  /* fonts */
-  --body: Inter;
-  --font-family: Circular Std;
-  font-family: Circular Std;
-
   /* font sizes */
   --body-size: 18px;
   --h6-size: 23px;
