@@ -1,0 +1,14 @@
+{
+  "name": "practice-two",
+  "version": "1.0.0",
+  "description": "- Document providing estimates for the Travel UI Landing website",
+  "scripts": {
+    "start": "parcel ./*.html ",
+    "build": "parcel build ./*.html  --dist-dir ./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
