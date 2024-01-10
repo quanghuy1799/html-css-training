@@ -26,7 +26,7 @@
 
 .title {
   color: var(--primary);
-  font-family: Circular Std;
+  font-family: Circular Std Book;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -34,9 +34,9 @@
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
-.heading {
+.section-heading {
   color: var(--heading-color);
-  font-family: Circular Std;
+  font-family: Circular Std Book;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -45,23 +45,44 @@
 .subheading {
   color: var(--subheading-color);
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
 }
-.heading-child {
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+}
+.card-title {
   color: var(--heading-color);
   text-align: center;
-  font-family: Circular Std;
+  font-family: Circular Std Book;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
-.subheading-child {
+.card-text {
   color: var(--subheading-color);
   text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.li-title {
+  color: var(--heading-color);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.li-text {
+  color: var(--subheading-color);
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -78,7 +99,7 @@
 }
 .price {
   color: var(--primary);
-  font-family: Circular Std;
+  font-family: Circular Std Book;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
@@ -86,13 +107,14 @@
 }
 .rate-star {
   color: var(#ff5722);
-  font-family: Circular Std;
+  font-family: Circular Std Book;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
-.card {
-  display: flex;
-  gap: 32px;
+
+body {
+  background-color: #fff;
+  font-family: Circular Std Book;
 }
