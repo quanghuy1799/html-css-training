@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../assets/fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../assets/fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"),
+    url("../assets/fonts/CircularStd-Book.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Common colors */
+:root {
+  --primary: #f85e9f;
+  --secondary: #5d50c6;
+  --background: #fff;
+  --heading-color: #191825;
+  --subheading-color: rgba(25, 24, 37, 0.5);
+}
+
+body {
+  background-color: #fff;
+  font-family: Circular Std Book;
+}
+
+/* Common title section */
+.section-title {
+  color: var(--primary);
+  font-family: Circular Std Book;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+/* Common heading section */
+.section-heading {
+  color: var(--heading-color);
+  font-family: Circular Std Book;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* Common subheading section */
+.section-subheading {
+  color: var(--subheading-color);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* Common card style */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 32px;
+}
+
+/* Common card title */
+.card-title {
+  color: var(--heading-color);
+  text-align: center;
+  font-family: Circular Std Book;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* Common card text */
+.card-text {
+  color: var(--subheading-color);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* Common list title */
+.list-title {
+  color: var(--heading-color);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* Common list text */
+.list-text {
+  color: var(--subheading-color);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* Common buttons */
+.btn {
+  padding: 24px 32px;
+  gap: 8px;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Common card price */
+.price {
+  color: var(--primary);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* Common card rate-star */
+.rate-star {
+  color: var(#ff5722);
+  font-family: Circular Std Book;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
