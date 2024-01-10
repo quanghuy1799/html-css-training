@@ -11,11 +11,12 @@
   font-family: "Inter";
   src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"),
     url("../assets/fonts/CircularStd-Book.woff") format("woff");
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
+/* Common colors */
 :root {
   --primary: #f85e9f;
   --secondary: #5d50c6;
@@ -24,7 +25,13 @@
   --subheading-color: rgba(25, 24, 37, 0.5);
 }
 
-.title {
+body {
+  background-color: #fff;
+  font-family: Circular Std Book;
+}
+
+/* Common title section */
+.section-title {
   color: var(--primary);
   font-family: Circular Std Book;
   font-size: 16px;
@@ -34,6 +41,8 @@
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
+
+/* Common heading section */
 .section-heading {
   color: var(--heading-color);
   font-family: Circular Std Book;
@@ -42,7 +51,9 @@
   font-weight: 700;
   line-height: 120%;
 }
-.subheading {
+
+/* Common subheading section */
+.section-subheading {
   color: var(--subheading-color);
   font-family: Inter;
   font-size: 16px;
@@ -50,11 +61,15 @@
   font-weight: 400;
   line-height: 160%;
 }
+
+/* Common card style */
 .card {
   display: flex;
   flex-direction: column;
   border-radius: 32px;
 }
+
+/* Common card title */
 .card-title {
   color: var(--heading-color);
   text-align: center;
@@ -64,6 +79,8 @@
   font-weight: 700;
   line-height: 120%;
 }
+
+/* Common card text */
 .card-text {
   color: var(--subheading-color);
   text-align: center;
@@ -73,7 +90,9 @@
   font-weight: 400;
   line-height: 160%;
 }
-.li-title {
+
+/* Common list title */
+.list-title {
   color: var(--heading-color);
   font-family: Circular Std Book;
   font-size: 23px;
@@ -81,7 +100,9 @@
   font-weight: 700;
   line-height: 120%;
 }
-.li-text {
+
+/* Common list text */
+.list-text {
   color: var(--subheading-color);
   font-family: Inter;
   font-size: 18px;
@@ -89,14 +110,19 @@
   font-weight: 400;
   line-height: 160%;
 }
+
+/* Common buttons */
 .btn {
   padding: 24px 32px;
   gap: 8px;
   border-radius: 100px;
 }
+
 .btn:hover {
   opacity: 0.8;
 }
+
+/* Common card price */
 .price {
   color: var(--primary);
   font-family: Circular Std Book;
@@ -105,6 +131,8 @@
   font-weight: 700;
   line-height: 120%;
 }
+
+/* Common card rate-star */
 .rate-star {
   color: var(#ff5722);
   font-family: Circular Std Book;
@@ -112,9 +140,4 @@
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-}
-
-body {
-  background-color: #fff;
-  font-family: Circular Std Book;
 }
