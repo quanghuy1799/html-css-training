@@ -1,11 +1,13 @@
-.container-main {
+.container {
   padding: 0 16px;
 }
+
 .nav-item {
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
 }
+
 .logo-item {
   display: flex;
   .logo {
@@ -21,14 +23,17 @@
     padding-left: 16px;
   }
 }
+
 .menu-icon {
   width: 48px;
   height: 48px;
 }
+
 .nav-list,
 .header-button-group {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .container-main {
     padding: 0 64px;
@@ -37,7 +42,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   .nav-list {
     display: none;
   }
@@ -55,6 +59,7 @@
     order: -1;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .container-main {
     padding: 0 64px;
