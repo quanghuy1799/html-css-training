@@ -1,4 +1,5 @@
 .container {
+  min-width: 398px;
   padding: 0 16px;
 }
 
@@ -34,8 +35,19 @@
   display: none;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+.partner-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 27px;
+  padding: 32px 0;
+}
+.partner-logo {
+  height: 20px;
+}
+@media screen and (min-width: 481px) {
   .container {
+    min-width: 896px;
     padding: 0 64px;
   }
   .nav-item {
@@ -58,13 +70,6 @@
   .menu-icon {
     order: -1;
   }
-}
-
-.partner-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 27px;
 }
 
 @media screen and (min-width: 1025px) {
