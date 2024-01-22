@@ -34,7 +34,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .container {
     padding: 0 64px;
   }
@@ -60,7 +60,14 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+.partner-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+@media screen and (min-width: 1025px) {
   .container {
     padding: 0 64px;
   }
@@ -77,6 +84,16 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+  }
+  .header-button-group {
+    display: flex;
+    .btn-login {
+      background-color: var(--background-color);
+    }
+    .btn-signup {
+      color: #fff;
+      background-color: var(--secondary);
+    }
   }
   .menu-icon {
     display: none;
