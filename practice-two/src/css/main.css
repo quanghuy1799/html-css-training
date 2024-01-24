@@ -34,6 +34,43 @@
   display: none;
 }
 
+.best-location-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  .carousel-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .previous-btn {
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid rgba(25, 24, 37, 0.5);
+  }
+  .next-btn {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary);
+    border-radius: 100%;
+    border: none;
+  }
+}
+.best-location-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .best-location-card,
+  .best-location-card-title,
+  .best-location-card-text,
+  .rate-star {
+    text-align: unset;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0 64px;
