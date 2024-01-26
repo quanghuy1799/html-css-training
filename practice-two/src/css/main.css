@@ -45,9 +45,8 @@
 .partner-logo {
   height: 20px;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .container {
-    min-width: 896px;
     padding: 0 64px;
   }
   .nav-item {
@@ -72,9 +71,9 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .container {
-    padding: 0 64px;
+    padding: 0 128px;
   }
   .nav-item {
     display: flex;
