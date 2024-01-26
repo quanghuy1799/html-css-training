@@ -1,4 +1,5 @@
 .container {
+  min-width: 430px;
   padding: 0 16px;
 }
 
@@ -34,13 +35,115 @@
   display: none;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  gap: 32px;
+}
+
+.hero-image {
+  position: relative;
+  height: 366px;
+  .hero-background {
+    width: 396px;
+  }
+  .hero-image-group {
+    position: absolute;
+    width: 295px;
+    top: 38px;
+    left: 46px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .hero-image-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.add-fr-icon {
+  position: absolute;
+  left: 176px;
+  top: 292px;
+  width: 75px;
+}
+
+.send-icon {
+  position: absolute;
+  top: 136px;
+  left: -40px;
+  width: 75px;
+}
+
+.top-places-icon {
+  position: absolute;
+  top: 212px;
+  left: 243px;
+  width: 115px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-title {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 16px 32px;
+  gap: 16px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
+    0px 34px 75px 0px rgba(0, 0, 0, 0.07),
+    0px 137px 137px 0px rgba(0, 0, 0, 0.06),
+    0px 308px 185px 0px rgba(0, 0, 0, 0.04),
+    0px 548px 219px 0px rgba(0, 0, 0, 0.01),
+    0px 856px 240px 0px rgba(0, 0, 0, 0);
+  margin-bottom: 16px;
+}
+
+.hero-heading {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.high-light {
+  color: var(--primary);
+}
+
+.hero-subheading {
+  text-align: center;
+}
+
+.cta-btn {
+  background: var(--secondary);
+  color: #fff;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 5px 11px 0px rgba(0, 0, 0, 0.1), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
+    0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 81px 32px 0px rgba(0, 0, 0, 0.01),
+    0px 126px 35px 0px rgba(0, 0, 0, 0);
+}
+
+.hero-action-btn {
+  justify-content: center;
+}
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0 64px;
-  }
-  .nav-item {
-    display: flex;
-    justify-content: space-between;
   }
   .nav-list {
     display: none;
