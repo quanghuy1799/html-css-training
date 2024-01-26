@@ -42,23 +42,27 @@
   gap: 32px;
   padding: 32px 0;
 }
+
 .best-location-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 16px;
 }
+
 .carousel-button {
   display: flex;
   align-self: stretch;
   justify-content: space-between;
 }
+
 .previous-btn {
   min-width: 64px;
   background: #fff;
   border-radius: 100%;
   border: 1px solid var(--border-color);
 }
+
 .next-btn {
   width: 64px;
   height: 64px;
@@ -85,8 +89,12 @@
   padding: 32px;
   border: 1px solid var(--border-color);
   border-radius: 0 0 32px 32px;
+  .rate-star {
+    position: relative;
+  }
   .star-icon {
     position: absolute;
+    top: 1px;
     margin-left: 8px;
   }
   .price {
