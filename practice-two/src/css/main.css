@@ -1,4 +1,5 @@
 .container {
+  min-width: 398px;
   padding: 0 16px;
 }
 
@@ -39,34 +40,39 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  .carousel-button {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .previous-btn {
-    width: 64px;
-    height: 64px;
-    background: #fff;
-    border-radius: 100%;
-    border: 1px solid rgba(25, 24, 37, 0.5);
-  }
-  .next-btn {
-    width: 64px;
-    height: 64px;
-    background-color: var(--secondary);
-    border-radius: 100%;
-    border: none;
-  }
 }
+.best-location-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.carousel-button {
+  display: flex;
+  align-self: stretch;
+  justify-content: space-between;
+}
+.previous-btn {
+  min-width: 64px;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+}
+.next-btn {
+  width: 64px;
+  height: 64px;
+  background-color: var(--secondary);
+  border-radius: 100%;
+  border: none;
+}
+
 .best-location-card {
+  min-width: 398px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  .best-location-card,
   .best-location-card-title,
-  .best-location-card-text,
-  .rate-star {
+  .best-location-card-text {
     text-align: unset;
   }
 }
