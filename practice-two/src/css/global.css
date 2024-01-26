@@ -23,6 +23,7 @@
   --background: #fff;
   --heading-color: #191825;
   --subheading-color: rgba(25, 24, 37, 0.5);
+  --border-color: rgba(25, 24, 37, 0.1);
 }
 a {
   text-decoration: none;
@@ -75,6 +76,12 @@ html {
   display: flex;
   flex-direction: column;
   border-radius: 32px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
+    0px 32px 71px 0px rgba(0, 0, 0, 0.05),
+    0px 128px 128px 0px rgba(0, 0, 0, 0.04),
+    0px 288px 173px 0px rgba(0, 0, 0, 0.03),
+    0px 513px 205px 0px rgba(0, 0, 0, 0.01),
+    0px 801px 224px 0px rgba(0, 0, 0, 0);
 }
 
 /* Common card title */
@@ -147,7 +154,7 @@ html {
 
 /* Common card rate-star */
 .rate-star {
-  color: var(#ff5722);
+  color: #ff5722;
   font-family: Circular Std Book;
   font-size: 23px;
   font-style: normal;
