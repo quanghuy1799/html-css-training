@@ -145,6 +145,7 @@
     0px 5px 11px 0px rgba(0, 0, 0, 0.1), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
     0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 81px 32px 0px rgba(0, 0, 0, 0.01),
     0px 126px 35px 0px rgba(0, 0, 0, 0);
+  min-height: 65px;
 }
 
 .hero-action-btn {
@@ -152,6 +153,9 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  background-color: #fff;
+  border: #eee;
+  min-height: 72px;
 }
 @media screen and (min-width: 768px) {
   .container {
