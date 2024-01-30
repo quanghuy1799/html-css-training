@@ -1,4 +1,6 @@
 .container {
+  min-width: 398px;
+  margin: 0 auto;
   padding: 0 16px;
 }
 
@@ -35,16 +37,19 @@
 }
 
 .service-section {
+  padding: 32px 0;
+}
+
+.service-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 32px;
 }
-
 .service-header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 16px;
 }
 
@@ -90,28 +95,6 @@
   .menu-icon {
     order: -1;
   }
-
-  .service-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 32px;
-  }
-
-  .service-header {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .service-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-  }
 }
 @media screen and (min-width: 1025px) {
   .container {
@@ -133,12 +116,5 @@
   }
   .menu-icon {
     display: none;
-  }
-
-  .service-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: start;
   }
 }
