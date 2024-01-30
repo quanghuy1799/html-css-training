@@ -1,5 +1,6 @@
 .container {
   min-width: 398px;
+  margin: 0 auto;
   padding: 0 16px;
 }
 
@@ -12,7 +13,7 @@
 .logo-item {
   display: flex;
   .logo {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
   }
   .logo-text {
@@ -21,7 +22,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
-    padding-left: 16px;
+    margin-left: 16px;
   }
 }
 
@@ -36,10 +37,6 @@
 }
 
 .best-location-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
   padding: 32px 0;
 }
 
@@ -48,6 +45,13 @@
   flex-direction: column;
   text-align: center;
   gap: 16px;
+}
+
+.best-location-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .carousel-button {

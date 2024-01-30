@@ -10,30 +10,30 @@
     <link rel="shortcut icon" href="assets/images/Travlog-logo.png" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="nav-item">
-          <a href="#" class="logo-item">
-            <img class="logo" src="assets/images/Travlog-logo.png" alt="logo" />
-            <h1 class="logo-text">Travlog</h1>
-          </a>
-          <ul class="nav-list">
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Discovery</a></li>
-            <li><a href="#" class="nav-link">Special Deals</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
-          </ul>
-          <div class="header-button-group">
-            <button class="btn btn-login">Login</button>
-            <button class="btn btn-signup">Sign Up</button>
-          </div>
-          <a href="#" class="menu-icon"
-            ><img src="assets/images/menu.png" alt="menu icon"
-          /></a>
-        </nav>
-      </header>
-      <main>
-        <section class="best-location-section">
+    <header class="container header">
+      <nav class="nav-item">
+        <a href="#" class="logo-item">
+          <img class="logo" src="assets/images/Travlog-logo.png" alt="logo" />
+          <h1 class="logo-text">Travlog</h1>
+        </a>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Discovery</a></li>
+          <li><a href="#" class="nav-link">Special Deals</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-button-group">
+          <button class="btn btn-login">Login</button>
+          <button class="btn btn-signup">Sign Up</button>
+        </div>
+        <a href="#" class="menu-icon"
+          ><img src="assets/images/menu.png" alt="menu icon"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <section class="best-location-section">
+        <div class="container best-location-item">
           <div class="best-location-content">
             <span class="section-title best-location-title">
               Top Destination
@@ -81,10 +81,12 @@
             <li class="card best-location-card-item">
               <img src="assets/images/maldives.png" alt="ocean" />
               <div class="best-location-card-content">
-                <span class="price">$20.99</span>
-                <h3 class="card-title best-location-card-title">
-                  Ocean with full of Colors
-                </h3>
+                <div class="card-header">
+                  <span class="price">$20.99</span>
+                  <h3 class="card-title best-location-card-title">
+                    Ocean with full of Colors
+                  </h3>
+                </div>
                 <p class="card-text best-location-card-text">Maldives</p>
                 <span class="rate-star"
                   >4.5<img
@@ -115,8 +117,8 @@
               </div>
             </li>
           </ul>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
