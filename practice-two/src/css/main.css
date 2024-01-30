@@ -1,6 +1,7 @@
 .container {
   min-width: 398px;
   padding: 0 16px;
+  margin: 0 auto;
 }
 
 .nav-item {
@@ -36,11 +37,14 @@
 }
 
 .partner-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 27px;
   padding: 32px 0;
+}
+.partner-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 27px;
 }
 .partner-logo {
   height: 20px;
@@ -71,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .container {
     padding: 0 128px;
   }
