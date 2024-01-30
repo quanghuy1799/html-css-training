@@ -13,7 +13,7 @@
 .logo-item {
   display: flex;
   .logo {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
   }
   .logo-text {
@@ -22,7 +22,7 @@
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
-    padding-left: 16px;
+    margin-left: 16px;
   }
 }
 
@@ -35,7 +35,6 @@
 .header-button-group {
   display: none;
 }
-
 .partner-section {
   padding: 32px 0;
 }
@@ -49,13 +48,10 @@
 .partner-logo {
   height: 20px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 64px;
-  }
-  .nav-item {
-    display: flex;
-    justify-content: space-between;
   }
   .nav-list {
     display: none;
