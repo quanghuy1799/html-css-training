@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Circular Std Book";
-  src: url("../assets/fonts/CircularStd-Book.woff2") format("woff2"),
-    url("../assets/fonts/CircularStd-Book.woff") format("woff");
+  font-family: "Circular Std Bold";
+  src: url("../assets/fonts/Circular\ Std\ Bold.woff2") format("woff2"),
+    url("../assets/fonts/Circular\ Std\ Bold.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -35,13 +35,13 @@ a:hover {
 body,
 html {
   background-color: #fff;
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
 }
 
 /* Common title section */
 .section-title {
   color: var(--primary);
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -53,7 +53,7 @@ html {
 /* Common heading section */
 .section-heading {
   color: var(--heading-color);
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -81,7 +81,7 @@ html {
 .card-title {
   color: var(--heading-color);
   text-align: center;
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -102,7 +102,7 @@ html {
 /* Common list title */
 .list-title {
   color: var(--heading-color);
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
@@ -138,7 +138,7 @@ html {
 /* Common card price */
 .price {
   color: var(--primary);
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
@@ -148,7 +148,7 @@ html {
 /* Common card rate-star */
 .rate-star {
   color: var(#ff5722);
-  font-family: Circular Std Book;
+  font-family: Circular Std Bold;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
