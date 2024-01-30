@@ -148,7 +148,7 @@ html {
 
 /* Common card rate-star */
 .rate-star {
-  color: var(#ff5722);
+  color: #ff5722;
   font-family: Circular Std Bold;
   font-size: 23px;
   font-style: normal;
