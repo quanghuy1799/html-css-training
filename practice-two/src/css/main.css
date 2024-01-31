@@ -356,6 +356,39 @@
   .menu-icon {
     order: -1;
   }
+  .service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 0;
+  }
+
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    .service-title {
+      font-size: 23px;
+    }
+
+    .service-heading {
+      font-size: 40px;
+    }
+  }
+
+  .service-card {
+    flex-direction: row;
+  }
+
+  .card-item {
+    padding: 64px;
+    .service-card-title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
