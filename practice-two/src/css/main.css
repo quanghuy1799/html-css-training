@@ -328,6 +328,7 @@
   flex-direction: column;
   gap: 16px;
   width: -webkit-fill-available;
+  
   .statistics-list-item,
   li {
     display: flex;
