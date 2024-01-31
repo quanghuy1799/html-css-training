@@ -336,6 +336,8 @@
 }
 @media screen and (min-width: 768px) {
   .container {
+    min-width: 896px;
+    margin: 0 auto;
     padding: 0 64px;
   }
   .nav-list {
@@ -358,6 +360,8 @@
 
 @media screen and (min-width: 1025px) {
   .container {
+    min-width: 1184px;
+    margin: 0 auto;
     padding: 0 128px;
   }
   .nav-item {
