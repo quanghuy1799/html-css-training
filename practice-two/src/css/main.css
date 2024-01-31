@@ -317,6 +317,7 @@
   flex-direction: column;
   gap: 16px;
   width: -webkit-fill-available;
+  
   .statistics-list-item,
   li {
     display: flex;
@@ -340,6 +341,7 @@
   align-items: center;
   gap: 64px;
   padding: 32px;
+  }
 }
 .benefit-content {
   display: flex;
@@ -395,6 +397,8 @@
 
 @media screen and (min-width: 768px) {
   .container {
+    min-width: 896px;
+    margin: 0 auto;
     padding: 0 64px;
   }
   .nav-list {
@@ -417,6 +421,8 @@
 
 @media screen and (min-width: 1025px) {
   .container {
+    min-width: 1184px;
+    margin: 0 auto;
     padding: 0 128px;
   }
   .nav-item {
