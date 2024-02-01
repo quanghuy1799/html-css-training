@@ -413,6 +413,32 @@
   .menu-icon {
     order: -1;
   }
+
+  .benefit-section {
+    gap: 64px;
+    padding: 64px 32px;
+  }
+
+  .benefit-title {
+    font-size: 23px;
+  }
+
+  .benefit-heading {
+    font-size: 40px;
+  }
+  .benefit-background {
+    width: -webkit-fill-available;
+  }
+  .benefit-list-item {
+    flex-direction: row;
+    align-items: center;
+    .benefit-title {
+      font-size: 23px;
+    }
+    .benefit-heading {
+      font-size: 40px;
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
