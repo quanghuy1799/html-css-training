@@ -408,4 +408,12 @@
   .menu-icon {
     display: none;
   }
+
+  .partner-section {
+    .partner-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
