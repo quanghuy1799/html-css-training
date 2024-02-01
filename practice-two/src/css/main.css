@@ -507,10 +507,38 @@
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 128px 0;
+    flex-direction: row;
+    padding: 64px 0;
+    gap: unset;
+  }
+
+  .hero-content {
+    order: -1;
+    align-items: start;
+    text-align: unset;
+  }
+
+  .hero-title {
+    margin-bottom: unset;
+  }
+
+  .hero-heading {
+    width: 100%;
+    font-size: 69px;
+  }
+
+  .high-light {
+    color: var(--primary);
+  }
+
+  .hero-subheading {
+    width: 100%;
+    margin-bottom: unset;
+  }
+
+  .hero-group-btn {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
   }
 }
