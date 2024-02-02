@@ -434,7 +434,6 @@
   }
 
   .statistics-section {
-    position: relative;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
@@ -443,6 +442,7 @@
   }
   .statistics-content {
     min-width: 38%;
+    position: relative;
     gap: 64px;
   }
   .statistics-header {
@@ -461,7 +461,7 @@
   .statistics-icon {
     display: block;
     position: absolute;
-    left: 1028px;
-    top: 283px;
+    left: 295px;
+    top: 195px;
   }
 }
