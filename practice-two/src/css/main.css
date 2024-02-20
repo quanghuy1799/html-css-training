@@ -169,11 +169,13 @@
 
 .partner-section {
   padding: 32px 0;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 27px;
+  .partner-group {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px;
+  }
 }
 
 .partner-logo {
@@ -434,6 +436,7 @@
     order: -1;
   }
 
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -530,7 +533,23 @@
     }
   }
 }
+.partner-section {
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+    .partner-group {
+      width: 70%;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 27px;
+    }
+  }
 
+  .partner-logo {
+    height: 32px;
+  }
 .carousel-section {
   display: flex;
   flex-direction: column;
