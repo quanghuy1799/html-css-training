@@ -317,7 +317,7 @@
   flex-direction: column;
   gap: 16px;
   width: -webkit-fill-available;
-
+  
   .statistics-list-item,
   li {
     display: flex;
@@ -328,12 +328,73 @@
     border: 1px solid var(--border-color);
     border-radius: 32px;
   }
+
+  .statistics-list-title {
+    font-size: 35px;
+    color: #ff5722;
+  }
 }
 
-.statistics-list-title {
-  font-size: 35px;
-  color: #ff5722;
+.benefit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 32px;
+  }
 }
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.benefit-header {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  .benefit-title {
+    margin-bottom: 16px;
+  }
+  .benefit-heading {
+    margin-bottom: 32px;
+  }
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px;
+
+  .location {
+    padding: 26px;
+    background-color: #ff5722;
+    border-radius: 32px;
+  }
+  .calendar {
+    padding: 26px;
+    background-color: #facd49;
+    border-radius: 32px;
+  }
+  .ticket {
+    padding: 26px;
+    background-color: var(--primary);
+    border-radius: 32px;
+  }
+  .benefit-list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     min-width: 896px;
