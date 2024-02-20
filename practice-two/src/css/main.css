@@ -858,6 +858,38 @@
   }
 
 
+  .best-location-section {
+    display: grid;
+    gap: 64px;
+    .best-location-card {
+      grid-column: span 2;
+    }
+  }
+  .best-location-content {
+    align-items: flex-start;
+  }
+
+  .carousel-button {
+    justify-content: flex-end;
+  }
+  .best-location-card {
+    justify-content: center;
+    best-location-card-item,
+    li {
+      width: fit-content;
+    }
+    .card-header {
+      flex-direction: row-reverse;
+      margin-bottom: 16px;
+    }
+    .best-location-title {
+      font-size: 28px;
+    }
+    .best-location-heading {
+      font-size: 44px;
+    }
+
+
   .service-section {
     display: flex;
     flex-direction: row;
@@ -939,7 +971,6 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
-
 
   }
 }
