@@ -436,7 +436,6 @@
     order: -1;
   }
 
-
   .hero {
     display: flex;
     flex-direction: column;
@@ -550,6 +549,40 @@
   .partner-logo {
     height: 32px;
   }
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 0;
+  }
+
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    .service-title {
+      font-size: 23px;
+    }
+
+    .service-heading {
+      font-size: 40px;
+    }
+  }
+
+  .service-card {
+    flex-direction: row;
+  }
+
+  .card-item {
+    padding: 64px;
+    .service-card-title {
+      font-size: 28px;
+    }
+  }
 .carousel-section {
   display: flex;
   flex-direction: column;
@@ -594,6 +627,7 @@
 .carousel-page {
   display: flex;
   gap: 24px;
+
 }
 
 @media screen and (min-width: 1025px) {
