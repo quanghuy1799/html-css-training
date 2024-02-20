@@ -857,6 +857,14 @@
     display: none;
   }
 
+
+  .partner-section {
+    .partner-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
   .hero {
     flex-direction: row;
     padding: 64px 0;
@@ -891,5 +899,6 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 16px;
+
   }
 }
