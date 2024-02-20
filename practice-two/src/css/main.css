@@ -243,6 +243,10 @@
   background-color: #fff;
   border: 1px solid var(--border-color);
   border-radius: 100%;
+
+  .previous-icon {
+    width: 15px;
+  }
 }
 
 .next-btn {
@@ -252,6 +256,10 @@
   background-color: var(--secondary);
   border: none;
   border-radius: 100%;
+
+  .next-icon {
+    width: 15px;
+  }
 }
 
 .best-location-card {
@@ -434,6 +442,85 @@
 
   .menu-icon {
     order: -1;
+  }
+
+
+  .best-location-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    gap: 67px;
+  }
+
+  .best-location-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+
+    .best-location-title {
+      font-size: 23px;
+    }
+
+    .best-location-heading {
+      font-size: 40px;
+    }
+  }
+
+  .carousel-button {
+    gap: 32px;
+  }
+
+  .previous-btn {
+    width: 100px;
+    height: 100px;
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 100%;
+  }
+
+  .next-btn {
+    width: 100px;
+    height: 100px;
+    padding: 38px;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 100%;
+  }
+
+  .best-location-card {
+    flex-direction: row;
+    gap: 31px;
+  }
+  .best-location-card-item {
+    width: 278px;
+  }
+
+  .best-location-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 32px 32px;
+    .card-header {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .rate-star {
+      position: relative;
+    }
+    .star-icon {
+      position: absolute;
+      top: 1px;
+      margin-left: 8px;
+    }
+    .best-location-card-text {
+      margin-bottom: 32px;
+    }
   }
 
   .hero {
@@ -627,6 +714,7 @@
 .carousel-page {
   display: flex;
   gap: 24px;
+
 
 }
 
