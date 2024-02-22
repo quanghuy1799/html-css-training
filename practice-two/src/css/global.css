@@ -39,6 +39,24 @@ html {
   font-family: Circular Std Bold;
 }
 
+.container {
+  width: 414px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
+
 /* Common title section */
 .section-title {
   color: var(--primary);
@@ -154,4 +172,42 @@ html {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 960px;
+    padding: 0 64px;
+  }
+
+  .section-title {
+    font-size: 23px;
+  }
+
+  .section-heading {
+    font-size: 40px;
+  }
+
+  .section-subheading {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 1312px;
+    padding: 0 128px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-heading {
+    font-size: 44px;
+  }
+
+  .section-subheading {
+    font-size: 18px;
+  }
 }

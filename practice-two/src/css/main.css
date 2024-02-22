@@ -1,9 +1,3 @@
-.container {
-  min-width: 398px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 .nav-item {
   display: flex;
   justify-content: space-between;
@@ -553,12 +547,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    min-width: 896px;
-    margin: 0 auto;
-    padding: 0 64px;
-  }
-
   .nav-list {
     display: none;
   }
@@ -945,12 +933,6 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .container {
-    min-width: 1184px;
-    margin: 0 auto;
-    padding: 0 128px;
-  }
-
   .nav-item {
     display: flex;
     justify-content: space-between;
