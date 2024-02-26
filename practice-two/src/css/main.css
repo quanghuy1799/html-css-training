@@ -240,6 +240,7 @@
   background-color: #fff;
   border: 1px solid var(--border-color);
   border-radius: 100%;
+  cursor: pointer;
 
   .previous-icon {
     width: 15px;
@@ -256,8 +257,9 @@
 .next-btn {
   padding: 24px;
   background-color: #fff;
-  border: none;
+  border: 1px solid var(--border-color);
   border-radius: 100%;
+  cursor: pointer;
 
   .next-icon {
     width: 15px;
@@ -266,6 +268,12 @@
 
   .next-icon:hover {
     filter: invert(100%);
+  }
+  .next-btn:hover {
+    background-color: var(--secondary);
+    .next-icon {
+      filter: invert(100%);
+    }
   }
 }
 
