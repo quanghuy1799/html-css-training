@@ -16,6 +16,12 @@
   font-display: swap;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Common colors */
 :root {
   --primary: #f85e9f;
@@ -24,7 +30,12 @@
   --heading-color: #191825;
   --subheading-color: rgba(25, 24, 37, 0.5);
   --border-color: rgba(25, 24, 37, 0.1);
+
+  --title-font-size: 16px;
+  --heading-font-size: 32px;
+  --sub-heading-font-size: 18px;
 }
+
 a {
   text-decoration: none;
   color: rgba(25, 24, 37, 0.5);
@@ -33,35 +44,26 @@ a:hover {
   color: #191825;
 }
 
+li:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
+    0px 34px 75px 0px rgba(0, 0, 0, 0.07),
+    0px 137px 137px 0px rgba(0, 0, 0, 0.06),
+    0px 308px 185px 0px rgba(0, 0, 0, 0.04),
+    0px 548px 219px 0px rgba(0, 0, 0, 0.01),
+    0px 856px 240px 0px rgba(0, 0, 0, 0);
+  border: 1px solid var(--border-color);
+}
 body,
 html {
   background-color: #fff;
   font-family: Circular Std Bold;
 }
 
-.container {
-  width: 414px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 0;
-}
-
 /* Common title section */
 .section-title {
   color: var(--primary);
   font-family: Circular Std Bold;
-  font-size: 16px;
+  font-size: var(--title-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -73,7 +75,7 @@ section {
 .section-heading {
   color: var(--heading-color);
   font-family: Circular Std Bold;
-  font-size: 32px;
+  font-size: var(--heading-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
@@ -83,7 +85,7 @@ section {
 .section-subheading {
   color: var(--subheading-color);
   font-family: Inter;
-  font-size: 16px;
+  font-size: var(--sub-heading-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -148,10 +150,18 @@ section {
   border: none;
   border-radius: 100px;
   cursor: pointer;
+  background-color: #fff;
+  color: #191825;
 }
-
 .btn:hover {
-  opacity: 0.8;
+  color: #fff;
+  background-color: var(--secondary);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
+    0px 34px 75px 0px rgba(0, 0, 0, 0.07),
+    0px 137px 137px 0px rgba(0, 0, 0, 0.06),
+    0px 308px 185px 0px rgba(0, 0, 0, 0.04),
+    0px 548px 219px 0px rgba(0, 0, 0, 0.01),
+    0px 856px 240px 0px rgba(0, 0, 0, 0);
 }
 
 /* Common card price */
@@ -175,39 +185,41 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 960px;
-    padding: 0 64px;
+  :root {
+    --title-font-size: 23px;
+    --heading-font-size: 40px;
+    --sub-heading-font-size: 18px;
   }
 
   .section-title {
-    font-size: 23px;
+    font-size: var(--title-font-size);
   }
 
   .section-heading {
-    font-size: 40px;
+    font-size: var(--heading-font-size);
   }
 
   .section-subheading {
-    font-size: 18px;
+    font-size: var(--sub-heading-font-size);
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .container {
-    width: 1312px;
-    padding: 0 128px;
+  :root {
+    --title-font-size: 23px;
+    --heading-font-size: 44px;
+    --sub-heading-font-size: 18px;
   }
 
   .section-title {
-    font-size: 28px;
+    font-size: var(--title-font-size);
   }
 
   .section-heading {
-    font-size: 44px;
+    font-size: var(--heading-font-size);
   }
 
   .section-subheading {
-    font-size: 18px;
+    font-size: var(--sub-heading-font-size);
   }
 }

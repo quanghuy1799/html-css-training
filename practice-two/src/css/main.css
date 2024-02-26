@@ -1,3 +1,8 @@
+.container {
+  width: 414px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 .nav-item {
   display: flex;
   justify-content: space-between;
@@ -33,11 +38,6 @@
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 0;
   gap: 32px;
 }
 
@@ -111,14 +111,18 @@
   padding: 16px 32px;
   gap: 16px;
   border-radius: 100px;
-  background: #fff;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.hero-title:hover {
+  color: var(--primary);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07),
     0px 34px 75px 0px rgba(0, 0, 0, 0.07),
     0px 137px 137px 0px rgba(0, 0, 0, 0.06),
     0px 308px 185px 0px rgba(0, 0, 0, 0.04),
     0px 548px 219px 0px rgba(0, 0, 0, 0.01),
     0px 856px 240px 0px rgba(0, 0, 0, 0);
-  margin-bottom: 16px;
 }
 
 .hero-heading {
@@ -145,13 +149,7 @@
 }
 
 .cta-btn {
-  background: var(--secondary);
-  color: #fff;
-  padding: 24px;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
-    0px 5px 11px 0px rgba(0, 0, 0, 0.1), 0px 20px 20px 0px rgba(0, 0, 0, 0.09),
-    0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 81px 32px 0px rgba(0, 0, 0, 0.01),
-    0px 126px 35px 0px rgba(0, 0, 0, 0);
+  border: 1px solid var(--border-color);
 }
 
 .hero-action-btn {
@@ -162,6 +160,10 @@
   padding: 24px;
   background-color: #fff;
   border: 1px solid var(--border-color);
+
+  .hero-action-btn:hover img {
+    filter: invert(100%);
+  }
 }
 
 .partner-section {
@@ -234,8 +236,6 @@
 }
 
 .previous-btn {
-  width: 64px;
-  height: 64px;
   padding: 24px;
   background-color: #fff;
   border: 1px solid var(--border-color);
@@ -243,19 +243,29 @@
 
   .previous-icon {
     width: 15px;
+    height: auto;
+  }
+}
+.previous-btn:hover {
+  background-color: var(--secondary);
+  .previous-icon {
+    filter: invert(100%);
   }
 }
 
 .next-btn {
-  width: 64px;
-  height: 64px;
   padding: 24px;
-  background-color: var(--secondary);
+  background-color: #fff;
   border: none;
   border-radius: 100%;
 
   .next-icon {
     width: 15px;
+    height: auto;
+  }
+
+  .next-icon:hover {
+    filter: invert(100%);
   }
 }
 
@@ -309,7 +319,7 @@
 }
 
 .statistics-image {
-  max-width: -webkit-fill-available;
+  width: 100%;
 }
 
 .statistics-content {
@@ -547,21 +557,17 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 64px;
+  }
   .nav-list {
     display: none;
   }
 
   .header-button-group {
     display: flex;
-  }
-
-  .btn-login {
-    background-color: var(--background-color);
-  }
-
-  .btn-signup {
-    color: #fff;
-    background-color: var(--secondary);
   }
 
   .menu-icon {
@@ -707,14 +713,6 @@
     flex-direction: column;
     text-align: center;
     gap: 16px;
-
-    .best-location-title {
-      font-size: 23px;
-    }
-
-    .best-location-heading {
-      font-size: 40px;
-    }
   }
 
   .carousel-button {
@@ -785,18 +783,6 @@
     width: -webkit-fill-available;
   }
 
-  .statistics-title {
-    font-size: 23px;
-  }
-
-  .statistics-heading {
-    font-size: 40px;
-  }
-
-  .statistics-subheading {
-    font-size: 18px;
-  }
-
   .statistics-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -822,26 +808,10 @@
   .benefit-content {
     gap: 64px;
 
-    .benefit-title {
-      font-size: 23px;
-    }
-
-    .benefit-heading {
-      font-size: 40px;
-    }
-
     .benefit-list-item {
       flex-direction: row;
       align-items: center;
       gap: 32px;
-    }
-
-    .benefit-title {
-      font-size: 23px;
-    }
-
-    .benefit-heading {
-      font-size: 40px;
     }
   }
 
@@ -907,14 +877,6 @@
     padding: 128px 64px;
   }
 
-  .form-title {
-    font-size: 23px;
-  }
-
-  .form-heading {
-    font-size: 40px;
-  }
-
   .input-form {
     flex-direction: row;
     width: 100%;
@@ -933,6 +895,11 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 128px;
+  }
   .nav-item {
     display: flex;
     justify-content: space-between;
@@ -951,14 +918,6 @@
 
   .header-button-group {
     display: flex;
-    .btn-login {
-      background-color: var(--background-color);
-    }
-
-    .btn-signup {
-      color: #fff;
-      background-color: var(--secondary);
-    }
   }
   .menu-icon {
     display: none;
@@ -1020,14 +979,6 @@
     flex-direction: column;
     text-align: unset;
     gap: 16px;
-
-    .service-title {
-      font-size: 23px;
-    }
-
-    .service-heading {
-      font-size: 44px;
-    }
   }
 
   .service-card {
@@ -1074,14 +1025,6 @@
         flex-direction: row-reverse;
         margin-bottom: 16px;
       }
-
-      .best-location-title {
-        font-size: 28px;
-      }
-
-      .best-location-heading {
-        font-size: 44px;
-      }
     }
   }
 
@@ -1099,14 +1042,6 @@
 
     .statistics-header {
       text-align: unset;
-    }
-
-    .statistics-title {
-      font-size: 28px;
-    }
-
-    .statistics-heading {
-      font-size: 44px;
     }
 
     .statistics-subheading {
@@ -1147,13 +1082,5 @@
   .carousel-background {
     width: 121%;
     top: -285px;
-  }
-
-  .form-title {
-    font-size: 28px;
-  }
-
-  .form-heading {
-    font-size: 44px;
   }
 }
