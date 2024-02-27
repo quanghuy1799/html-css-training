@@ -515,6 +515,12 @@
   gap: 16px;
 }
 
+.customer-text::before {
+  content: "Mark Smith";
+  position: absolute;
+  color: var(--Orange, #ff5722);
+}
+
 .carousel-image {
   width: 128px;
 }
@@ -961,7 +967,6 @@
     }
 
     .customer-text {
-      color: var(--Orange, #ff5722);
       text-align: center;
       font-size: 28px;
       font-style: normal;
