@@ -28,6 +28,7 @@
   --secondary: #5d50c6;
   --background: #fff;
   --heading-color: #191825;
+  --highlight-color: #ff5722;
   --subheading-color: rgba(25, 24, 37, 0.5);
   --border-color: rgba(25, 24, 37, 0.1);
 
@@ -35,6 +36,10 @@
   --heading-font-size: 32px;
   --sub-heading-font-size: 18px;
 }
+
+/* img {
+  pointer-events: none;
+} */
 
 a {
   text-decoration: none;
@@ -196,7 +201,7 @@ html {
 
 /* Common card rate-star */
 .rate-star {
-  color: #ff5722;
+  color: var(--highlight-color);
   font-family: Circular Std Bold;
   font-size: 23px;
   font-style: normal;
