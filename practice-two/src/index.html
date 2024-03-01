@@ -37,38 +37,65 @@
         <section class="hero">
           <div class="hero-image">
             <img
-              src="assets/images/hero-background.png"
+              src="assets/images/hero-vector-small.png"
+              srcset="
+                assets/images/hero-vector-small.png  300w,
+                assets/images/hero-vector-medium.png 768w
+              "
               alt="hero background"
               class="hero-background"
             />
             <div class="hero-image-group">
               <div class="hero-image-item">
-                <img src="assets/images/beach.png" alt="beach" class="beach" />
                 <img
-                  src="assets/images/mountain.png"
+                  src="assets/images/beach-small.png"
+                  srcset="
+                    assets/images/beach-small.png  300w,
+                    assets/images/beach-medium.png 768w
+                  "
+                  alt="beach"
+                  class="check-in-image"
+                />
+                <img
+                  src="assets/images/mountain-small.png"
+                  srcset="
+                    assets/images/mountain-small.png  300w,
+                    assets/images/mountain-medium.png 768w
+                  "
                   alt="mountain"
-                  class="mountain"
+                  class="check-in-image"
                 />
               </div>
-              <img src="assets/images/city.png" alt="city" class="city" />
-              <!-- <img
-                src="assets/images/add-user.png"
-                alt="add friend icon"
-                class="icon add-user"
-              />
 
               <img
-                src="assets/images/top-palaces-icon.png"
-                alt="top places icon"
-                class="icon top-places-icon"
+                src="assets/images/city-small.png"
+                srcset="
+                  assets/images/city-small.png  300w,
+                  assets/images/city-medium.png 768w
+                "
+                alt="city"
+                class="check-in-image"
               />
-
-              <img
-                src="assets/images/send-icon.png"
-                alt="send icon"
-                class="icon send"
-              /> -->
             </div>
+            <img
+              src="assets/images/add-user.png"
+              alt="add friend icon"
+              class="icon add-user"
+            />
+            <span class="top-places-frame">
+              <img
+                src="assets/images/location-icon.png"
+                alt="top places icon"
+                class="top-places-icon"
+              />
+              Top palace
+            </span>
+
+            <img
+              src="assets/images/send.png"
+              alt="send icon"
+              class="icon send"
+            />
           </div>
           <div class="hero-content">
             <a class="hero-title">
@@ -90,7 +117,7 @@
             <div class="hero-group-btn">
               <button class="btn cta-btn">Get Started</button>
               <button class="btn hero-action-btn">
-                <img src="assets/images/play.png" alt="play" />
+                <img src="assets/images/play.png" alt="Watch-demo-icon" />
                 Watch demo
               </button>
             </div>
@@ -98,33 +125,31 @@
         </section>
 
         <section class="partner-section">
-          <div class="partner-group">
-            <img
-              class="partner-logo"
-              src="assets/images/tripad.png"
-              alt="Tripadsvisor"
-            />
-            <img
-              class="partner-logo"
-              src="assets/images/expedia.png"
-              alt="Expedia"
-            />
-            <img
-              class="partner-logo"
-              src="assets/images/booking.png"
-              alt="Booking"
-            />
-            <img
-              class="partner-logo"
-              src="assets/images/airbnb.png"
-              alt="airbnb"
-            />
-            <img
-              class="partner-logo"
-              src="assets/images/orbitz.png"
-              alt="orbitz"
-            />
-          </div>
+          <img
+            class="partner-logo"
+            src="assets/images/tripad.png"
+            alt="Tripadsvisor"
+          />
+          <img
+            class="partner-logo"
+            src="assets/images/expedia.png"
+            alt="Expedia"
+          />
+          <img
+            class="partner-logo"
+            src="assets/images/booking.png"
+            alt="Booking"
+          />
+          <img
+            class="partner-logo"
+            src="assets/images/airbnb.png"
+            alt="airbnb"
+          />
+          <img
+            class="partner-logo"
+            src="assets/images/orbitz.png"
+            alt="orbitz"
+          />
         </section>
 
         <section class="service-section">
@@ -366,11 +391,11 @@
         </section>
 
         <section class="carousel-section">
-          <!-- <img
+          <img
             src="assets/images/carousel-background.png"
             class="carousel-background"
             alt=""
-          /> -->
+          />
           <div class="carousel-content">
             <div class="carousel-header">
               <span class="section-title carousel-title">Testimonials</span>
@@ -418,9 +443,9 @@
               It has roots in a piece of classical Latin literature from 45 BC.
             </p>
             <div class="carousel-page">
-              <img src="assets/images/white.png" alt="" class="white" />
-              <img src="assets/images/pink.png" alt="" class="pink" />
-              <img src="assets/images/white.png" alt="" class="white" />
+              <img src="assets/images/white.png" alt="" class="point" />
+              <img src="assets/images/pink.png" alt="" class="point" />
+              <img src="assets/images/white.png" alt="" class="point" />
             </div>
             <div class="arrow-button">
               <button class="arrow-btn previous-btn">
@@ -465,13 +490,9 @@
 
       <footer class="footer">
         <div class="footer-content">
-          <a class="footer-logo" href="#">
-            <img
-              class="footer-logo-image"
-              src="assets/images/travlog-logo.png"
-              alt=""
-            />
-            <h6 class="section-heading footer-logo-text">Travlog</h6>
+          <a href="#" class="logo-item">
+            <img class="logo" src="assets/images/Travlog-logo.png" alt="logo" />
+            <h1 class="logo-text">Travlog</h1>
           </a>
           <p class="section-subheading footer-subheading">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
