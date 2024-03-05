@@ -11,8 +11,5 @@
   "devDependencies": {
     "parcel": "^2.7.0"
   },
-  "main": "index.js",
-  "engines": {
-    "node": "20.x"
-  }
+  "main": "index.js"
 }
