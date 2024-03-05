@@ -46,9 +46,9 @@
   --sub-heading-font-size: 18px;
 }
 
-/* img {
+img {
   pointer-events: none;
-} */
+}
 
 a {
   text-decoration: none;
@@ -70,6 +70,8 @@ li:hover {
     0px 548px 219px 0px rgba(0, 0, 0, 0.01),
     0px 856px 240px 0px rgba(0, 0, 0, 0);
 }
+
+
 body,
 html {
   background-color: #fff;
