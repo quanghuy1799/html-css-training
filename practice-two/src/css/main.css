@@ -41,10 +41,9 @@
 
 .hero-image {
   position: relative;
-  min-width: 430px;
   height: 366px;
-  .hero-background {
-    width: 100%;
+  .hero-vector {
+    width: 396px
   }
 
   .hero-image-group {
@@ -136,6 +135,7 @@
 }
 
 .hero-heading {
+  width: 95%;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -172,8 +172,8 @@
   background-color: var(--background);
   border: 1px solid var(--border-color);
 
-  .hero-action-btn:hover img {
-    filter: invert(100%);
+  .play-icon,img:hover {
+    filter: brightness(0);
   }
 }
 
@@ -183,6 +183,10 @@
   justify-content: center;
   gap: 27px;
   padding: 32px 0;
+
+  .partner{
+    display: none;
+  }
 
   .partner-logo {
     width: auto;
@@ -194,7 +198,6 @@
   padding: 32px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 32px;
 }
 
@@ -203,6 +206,9 @@
   flex-direction: column;
   text-align: center;
   gap: 16px;
+  .service-heading{
+    text-align: center;
+  }
 }
 
 .service-card {
@@ -717,7 +723,7 @@
   .hero-image {
     position: relative;
     height: 713px;
-    .hero-background {
+    .hero-vector {
       width: 772px;
     }
 
@@ -728,7 +734,7 @@
 
     .send {
       top: 340px;
-      left: 85px;
+      left: 60px;
     }
 
     .top-places-frame {
@@ -736,7 +742,7 @@
       padding: 15px;
       padding-left: 44px;
       top: 496px;
-      left: 615px;
+      left: 595px;
     }
 
     .top-places-icon {
@@ -746,8 +752,8 @@
     }
 
     .hero-image-group {
-      top: 76px;
-      left: 108px;
+      top: 75px;
+      left: 85px;
       gap: 32px;
     }
 
@@ -784,13 +790,14 @@
 
   .hero-subheading {
     margin-bottom: 0;
-    width: 44%;
+    width: 50%;
   }
 
   .hero-group-btn {
     width: auto;
     flex-direction: row;
     gap: 8px;
+
     .cta-btn,
     .hero-action-btn {
       padding: 16px 32px;
@@ -809,6 +816,7 @@
 
   .service-section {
     gap: 64px;
+    text-align: center;
   }
 
   .service-card {
@@ -1145,6 +1153,10 @@
     width: 35%;
     flex-shrink: 0;
     text-align: left;
+
+    .service-heading{
+      text-align: left;
+    }
   }
 
   .service-card {
@@ -1284,7 +1296,6 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
-
 
     .footer-image {
       top: 5450px;
