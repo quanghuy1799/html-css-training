@@ -226,18 +226,6 @@ html {
     --sub-heading-font-size: 18px;
   }
 
-  .section-title {
-    font-size: var(--title-font-size);
-  }
-
-  .section-heading {
-    font-size: var(--heading-font-size);
-  }
-
-  .section-subheading {
-    font-size: var(--sub-heading-font-size);
-  }
-
   .icon {
     width: 64px;
     padding: 13px;
@@ -255,15 +243,5 @@ main {
     --sub-heading-font-size: 18px;
   }
 
-  .section-title {
-    font-size: var(--title-font-size);
-  }
-
-  .section-heading {
-    font-size: var(--heading-font-size);
-  }
-
-  .section-subheading {
-    font-size: var(--sub-heading-font-size);
-  }
+ 
 }

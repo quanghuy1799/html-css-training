@@ -1,25 +1,13 @@
 .container {
-  max-width: 430px;
+  min-width: 430px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .nav-item {
   display: flex;
   justify-content: space-between;
-  padding: 32px 16px;
-
-}
-
-.logo-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  .logo-text {
-    color: var(--heading-color);
-    font-size: 24px;
-    font-family: Circular Std Bold;
-  }
+  padding: 32px 0;
 }
 
 .logo-item {
@@ -47,15 +35,19 @@
 .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
-  padding: 32px 16px;
   gap: 32px;
 }
 
 .hero-image {
   position: relative;
-    height: 366px;
-  
+  min-width: 430px;
+  height: 366px;
+  .hero-background {
+    width: 100%;
+  }
+
   .hero-image-group {
     position: absolute;
     width: 295px;
@@ -65,7 +57,6 @@
     align-items: center;
     gap: 16px;
   }
-
   .hero-image-item {
     display: flex;
     flex-direction: column;
@@ -73,37 +64,33 @@
   }
 
   .check-in-image {
-    max-width: 140px;
+    width: 140px;
   }
-
   .add-user {
     position: absolute;
     left: 239px;
     top: 336px;
     background-color: var(--highlight-color);
   }
-
   .send {
     position: absolute;
     top: 174px;
     left: 34px;
     background-color: var(--primary);
   }
-
   .top-places-frame {
     position: absolute;
     display: inline-block;
     font-weight: 600;
     font-size: 8px;
     background-color: var(--background);
-    text-wrap: nowrap;
     border-radius: 32px;
     padding: 12px;
     padding-left: 27px;
     top: 248px;
     left: 305px;
+    text-wrap: nowrap;
   }
-
   .top-places-icon {
     position: absolute;
     width: 16px;
@@ -151,7 +138,6 @@
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 24px;
-  width: 95%;
 }
 
 .high-light {
@@ -171,7 +157,6 @@
 }
 
 .cta-btn {
-  padding: 25px;
   border: 1px solid var(--border-color);
 }
 
@@ -194,7 +179,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 27px;
-  padding: 32px 16px;
+  padding: 32px 0;
 
   .partner-logo {
     width: auto;
@@ -203,7 +188,7 @@
 }
 
 .service-section {
-  padding: 32px 16px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,7 +228,7 @@
 .best-location-section {
   display: flex;
   flex-direction: column;
-  padding: 32px 16px;
+  padding: 32px 0;
   gap: 32px;
 }
 
@@ -286,7 +271,7 @@
   gap: 32px;
   .best-location-card-title,
   .best-location-card-text {
-    text-align: unset;
+    text-align: left;
   }
 }
 
@@ -323,7 +308,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 64px;
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .statistics-image {
@@ -385,7 +370,7 @@
   flex-direction: column;
   align-items: start;
   gap: 64px;
-  padding: 32px 16px;
+  padding: 32px;
 }
 
 .benefit-background {
@@ -446,7 +431,7 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  padding: 32px 16px;
+  padding: 32px;
 }
 
 .benefit-content {
@@ -509,6 +494,7 @@
 }
 
 .carousel-section {
+  padding: 32px 0;
   position: relative;
 }
 
@@ -521,7 +507,6 @@
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  padding: 32px 16px;
 }
 
 .carousel-header {
@@ -578,7 +563,7 @@
   gap: 64px;
   padding: 64px 32px;
   background: #facd4914;
-  border-radius: 32px 16px;
+  border-radius: 32px;
 }
 
 .graphic-image {
@@ -686,6 +671,7 @@
     flex-direction: column;
     gap: 16px;
   }
+  
   .company,
   .contact,
   .meet-us,
@@ -701,9 +687,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .nav-item{
-    padding: 32px 64px;
+  .container {
+    padding: 0 64px;
   }
+
   .nav-list {
     display: none;
   }
@@ -715,36 +702,44 @@
   .header-button-group {
     display: flex;
   }
+
   .hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 64px;
+    padding: 64px 0;
     gap: 64px;
   }
 
   .hero-image {
     position: relative;
     height: 713px;
+    .hero-background {
+      width: 772px;
+    }
+
     .add-user {
       top: 650px;
       left: 500px;
     }
+
     .send {
       top: 340px;
       left: 85px;
     }
+
     .top-places-frame {
       font-size: 14px;
-      padding: 21px;
+      padding: 15px;
       padding-left: 44px;
       top: 496px;
       left: 615px;
     }
+
     .top-places-icon {
       width: 24px;
       left: 15px;
-      top: 15px;
+      top: 9px;
     }
 
     .hero-image-group {
@@ -765,27 +760,28 @@
 
   .hero-content {
     gap: 43px;
-    .hero-title {
-      margin-bottom: 0;
-    }
-  
-    .hero-heading {
-      font-size: 56px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 120%;
-      margin-bottom: 0;
-      width: 70%;
-    }
-    .high-light {
-      color: var(--primary);
-    }
-  
-    .hero-subheading {
-      margin-bottom: 0;
-      width: 50%;
-      font-size: 18px;
-    }
+  }
+
+  .hero-title {
+    margin-bottom: 0;
+  }
+
+  .hero-heading {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 0;
+    width: 70%;
+  }
+
+  .high-light {
+    color: var(--primary);
+  }
+
+  .hero-subheading {
+    margin-bottom: 0;
+    width: 44%;
   }
 
   .hero-group-btn {
@@ -797,10 +793,11 @@
       padding: 16px 32px;
     }
   }
+
   .partner-section {
     width: 70%;
     margin-left: 15%;
-    padding: 64px 64px;
+    padding: 64px 0;
 
     .partner-logo {
       height: 32px;
@@ -809,7 +806,6 @@
 
   .service-section {
     gap: 64px;
-    padding: 64px 64px;
   }
 
   .service-card {
@@ -822,9 +818,11 @@
   .best-location-section {
     flex-direction: column;
     align-items: center;
-    padding: 64px 64px;
+    padding: 64px 0;
     gap: 67px;
   }
+
+
   .arrow-button {
     gap: 32px;
 
@@ -832,6 +830,7 @@
     .next-btn {
       padding: 40px;
     }
+
     .previous-icon {
       width: 18px;
       height: auto;
@@ -890,7 +889,7 @@
 
   .statistics-section {
     gap: 64px;
-    padding: 64px 64px;
+    padding: 64px 32px;
   }
 
   .statistics-list {
@@ -909,7 +908,6 @@
 
   .benefit-section {
     gap: 70px;
-    padding: 64px;
   }
 
   .benefit-background {
@@ -930,11 +928,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding-bottom: 64px;
-   padding: 64px;
-   background: url(../assets/images/carousel-background.png);
-   background-repeat: no-repeat;
-   background-size: cover;
+    padding-bottom: 128px;
 
     .arrow-button {
       position: absolute;
@@ -946,7 +940,7 @@
     display: block;
     width: 100vw;
     position: absolute;
-    bottom: -10px;
+    bottom: 80px;
   }
 
   .carousel-content {
@@ -1012,11 +1006,13 @@
     justify-content: space-between;
     gap: 32px;
   }
+
   .mail-icon {
     width: 32px;
     top: 20px;
     left: 29px;
   }
+
   .email-input {
     border-radius: 32px;
     padding-left: 70px;
@@ -1024,6 +1020,7 @@
     font-size: 23px;
     border: none;
   }
+
   .email-input::placeholder {
     font-size: 23px;
     font-family: CircularStd;
@@ -1054,24 +1051,26 @@
         display: none;
       }
     }
+
     .footer-image {
       display: block;
       position: absolute;
       right: 0;
-      top: 6370px;
+      top: 7760px;
     }
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .container{
+  .container {
     max-width: 1440px;
+    padding: 0 128px;
   }
+
   .nav-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 128px;
   }
 
   .nav-list {
@@ -1094,57 +1093,49 @@
 
   .hero {
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: start;
     gap: 0;
-    padding: 64px 128px;
-    .hero-image-group{
-      top: 75px;
-      left: 90px;
-    }
   }
 
-
   .hero-content {
+    width: 35%;
     align-items: start;
     text-align: left;
-    .hero-title {
-      margin-bottom: 0;
-    }
-  
-    .hero-heading {
-      font-size: 69px;
-      width: 100%;
-    }
-  
-    .high-light {
-      color: var(--primary);
-    }
-  
-    .hero-subheading {
-      width: 100%;
-      margin-bottom: 0;
-    }
+  }
+
+  .hero-title {
+    margin-bottom: 0;
+  }
+
+  .hero-heading {
+    width: 100%;
+    font-size: 69px;
+  }
+
+  .high-light {
+    color: var(--primary);
+  }
+
+  .hero-subheading {
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .hero-group-btn {
     align-items: flex-start;
     gap: 16px;
-    .cta-btn{
-      padding: 20px 32px;
-    }
   }
+
   .partner-section {
     width: 100%;
     margin-left: 0;
     justify-content: space-between;
-    padding: 32px 16px;
   }
 
   .service-section {
     flex-direction: row;
     align-items: center;
     gap: 0;
-    padding: 32px 16px;
   }
 
   .service-header {
@@ -1175,7 +1166,6 @@
   .best-location-section {
     display: grid;
     gap: 64px;
-  
     .best-location-card {
       grid-column: span 2;
     }
@@ -1207,7 +1197,8 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding: 64px 0;
-    gap: unset;
+    gap: 0;
+
     .statistics-content {
       width: 38%;
       position: relative;
@@ -1222,7 +1213,7 @@
     }
 
     .statistics-header {
-      text-align: unset;
+      text-align: left;
     }
 
     .statistics-subheading {
@@ -1241,18 +1232,19 @@
     flex-direction: row-reverse;
     align-items: start;
     justify-content: start;
+    padding: 64px 0;
   }
 
   .benefit-background {
-    width: 59%;
+    width: 693px;
   }
 
   .benefit-content {
-    width: 45%;
+    min-width: 45%;
   }
 
   .benefit-header {
-    text-align: unset;
+    text-align: left;
   }
 
   .carousel-section {
@@ -1260,7 +1252,7 @@
   }
 
   .carousel-background {
-    bottom: -280px;
+    bottom: -225px;
   }
 
   .carousel-content {
@@ -1275,6 +1267,8 @@
     gap: 64px;
     align-items: center;
   }
+
+
   .form-header {
     width: 70%;
   }
@@ -1288,14 +1282,14 @@
     flex-direction: row;
     justify-content: space-between;
 
-    .footer-content {
-      width: 140%;
-    }
 
     .footer-image {
-      top: 4475px;
+      top: 5450px;
     }
 
+.list-link{
+  width: 165px;
+}
     .footer-link,
     li:hover {
       box-shadow: none;
