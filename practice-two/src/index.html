@@ -36,33 +36,29 @@
       <main>
         <section class="hero">
           <div class="hero-image">
-            <picture class="hero-vector">
-              <source media="(max-width: 430px)" srcset="./assets/images/hero-vector-small.png">
-              <source srcset="./assets/images/hero-vector-medium.png">
-              <img src="./assets/images/hero-vector-medium.png" alt="vector">
-            </picture>
+            <img srcset="./assets/images/hero-vector-small.webp 430w,
+            ./assets/images/hero-vector-small.webp 768w" 
+            sizes="(min-width: 320px) 430px, (min-width: 768px) 768px"
+            src="assets/images/hero-vector-medium.webp"
+            alt="" class="hero-vector">
             <div class="hero-image-group">
               <div class="hero-image-item">
                 <img
-                  src="./assets/images/beach-small.png"
                   srcset="
-                    ./assets/images/beach-small.webp  767w,
-                    ./assets/images/beach-medium.webp 768w
-                  "
-                  sizes="(max-width: 600px) 480px,
-                  800px"
+                    ./assets/images/beach-small.png  430w,
+                    ./assets/images/beach-medium.png 768w"
+                  sizes="(min-width: 768px) 430px"
                   alt="beach"
-                  class="check-in-image"
-                >
+                  class="check-in-image">
                 <img
                   src="assets/images/mountain-small.png"
                   srcset="
-                    ./assets/images/mountain-small.png  767w,
+                    ./assets/images/mountain-small.png  430w,
                     ./assets/images/mountain-medium.png 768w
                   "
+                  sizes="(min-width: 768px) 430px"
                   alt="mountain"
-                  class="check-in-image"
-                >
+                  class="check-in-image">
               </div>
 
               <img
@@ -71,29 +67,25 @@
                 ./assets/images/city-small.png  767w,
                   ./assets/images/city-medium.png 768w
                 "
+                sizes="(min-width: 768px) 430px"
                 alt="city"
-                class="check-in-image"
-              >
+                class="check-in-image">
             </div>
             <img
               src="assets/images/add-user.png"
               alt="add friend icon"
-              class="icon add-user"
-            >
+              class="icon add-user">
             <span class="top-places-frame">
               <img
                 src="assets/images/location-icon.png"
                 alt="top places icon"
-                class="top-places-icon"
-              >
+                class="top-places-icon">
               Top palace
             </span>
-
             <img
               src="assets/images/send.png"
               alt="send icon"
-              class="icon send"
-            >
+              class="icon send">
           </div>
           <div class="hero-content">
             <a class="hero-title">
@@ -101,8 +93,7 @@
               <img
                 src="assets/images/work-icon.png"
                 alt="title icon"
-                class="title-icon"
-              >
+                class="title-icon">
             </a>
             <h2 class="hero-heading">
               Travel <span class="high-light">top destination</span> of the
@@ -126,28 +117,23 @@
             <img
               class="partner-logo"
               src="assets/images/tripad.png"
-              alt="Tripadsvisor"
-            >
+              alt="Tripadsvisor">
             <img
               class="partner-logo"
               src="assets/images/expedia.png"
-              alt="Expedia"
-            >
+              alt="Expedia">
             <img
               class="partner-logo"
               src="assets/images/booking.png"
-              alt="Booking"
-            >
+              alt="Booking">
             <img
               class="partner-logo"
               src="assets/images/airbnb.png"
-              alt="airbnb"
-            >
+              alt="airbnb">
             <img
               class="partner-logo"
               src="assets/images/orbitz.png"
-              alt="orbitz"
-            >
+              alt="orbitz">
           </section>
 
           <section class="service-section">
@@ -162,8 +148,7 @@
                 <img
                   class="card-icon"
                   src="assets/images/card-earth.webp"
-                  alt=""
-                >
+                  alt="">
                 <h3 class="card-title service-card-title">Best Tour Guide</h3>
                 <p class="card-text service-card-text">
                   What looked like a small patch of purple grass, above five feet.
@@ -173,9 +158,7 @@
                 <img
                   class="card-icon"
                   src="assets/images/card-booking.png"
-                  alt=""
-                >
-
+                  alt="">
                 <h3 class="card-title service-card-title">Easy Booking</h3>
                 <p class="card-text service-card-text">
                   Square, was moving across the sand in their direction.
@@ -185,8 +168,7 @@
                 <img
                   class="card-icon"
                   src="assets/images/card-cloudy.png"
-                  alt=""
-                >
+                  alt="">
 
                 <h3 class="card-title service-card-title">Weather Forecast</h3>
                 <p class="card-text service-card-text">
@@ -210,15 +192,13 @@
                 <img
                   src="assets/images/previous-icon.png"
                   alt="previous button"
-                  class="previous-icon"
-                >
+                  class="previous-icon">
               </button>
               <button class="arrow-btn next-btn">
                 <img
                   src="assets/images/next-icon.png"
                   alt="next button"
-                  class="next-icon"
-                >
+                  class="next-icon">
               </button>
             </div>
             <ul class="best-location-card">
@@ -285,8 +265,7 @@
             <img
               src="assets/images/statistics-image.png"
               alt="statistic background"
-              class="statistics-image"
-            >
+              class="statistics-image">
             <div class="statistics-content">
               <div class="statistics-header">
                 <span class="section-title statistics-title">Travel Point</span>
@@ -328,8 +307,7 @@
             <img
               src="assets/images/benefit-background.png"
               alt="benefit background"
-              class="benefit-background"
-            >
+              class="benefit-background">
             <div class="benefit-content">
               <div class="benefit-header">
                 <span class="section-title benefit-title">Key features</span>
@@ -347,8 +325,7 @@
                   <img
                     src="assets/images/location.png"
                     alt=""
-                    class="location-icon"
-                  >
+                    class="location-icon">
                   <div class="benefit-list-content">
                     <h3 class="benefit list-title">We offer best services</h3>
                     <p class="list-text benefit-list-text">
@@ -360,8 +337,7 @@
                   <img
                     src="assets/images/calendar.png"
                     alt=""
-                    class="calendar-icon"
-                  >
+                    class="calendar-icon">
                   <div class="benefit-list-content">
                     <h3 class="benefit list-title">Schedule your trip</h3>
                     <p class="list-text benefit-list-text">
@@ -373,8 +349,7 @@
                   <img
                     src="assets/images/ticket.png"
                     alt=""
-                    class="ticket-icon"
-                  >
+                    class="ticket-icon">
                   <div class="benefit-list-content">
                     <h3 class="benefit list-title">Get discounted coupons</h3>
                     <p class="list-text benefit-list-text">
@@ -390,8 +365,7 @@
             <img
               src="assets/images/carousel-background.png"
               class="carousel-background"
-              alt=""
-            >
+              alt="">
             <div class="carousel-content">
               <div class="carousel-header">
                 <span class="section-title carousel-title">Testimonials</span>
@@ -402,16 +376,22 @@
               <img
                 src="assets/images/carousel-image.png"
                 alt="carousel image"
-                class="carousel-image"
-              >
+                class="carousel-image">
               <div class="customer-review">
                 <span class="customer-text">Mark Smith / Travel Enthusiast</span>
                 <div class="ratting">
                   <img
                     src="assets/images/star-yellow.png"
                     alt="star yellow"
-                    class="ratting-star"
-                  >
+                    class="ratting-star">
+                  <img
+                    src="assets/images/star-yellow.png"
+                    alt="star yellow"
+                    class="ratting-star">
+                  <img
+                    src="assets/images/star-yellow.png"
+                    alt="star yellow"
+                    class="ratting-star">
                   <img
                     src="assets/images/star-yellow.png"
                     alt="star yellow"
@@ -420,18 +400,7 @@
                   <img
                     src="assets/images/star-yellow.png"
                     alt="star yellow"
-                    class="ratting-star"
-                  >
-                  <img
-                    src="assets/images/star-yellow.png"
-                    alt="star yellow"
-                    class="ratting-star"
-                  >
-                  <img
-                    src="assets/images/star-yellow.png"
-                    alt="star yellow"
-                    class="ratting-star"
-                  >
+                    class="ratting-star">
                 </div>
               </div>
               <p class="section-subheading carousel-subheading">
@@ -448,8 +417,7 @@
                   <img
                     src="assets/images/previous-icon.png"
                     alt="previous button"
-                    class="previous-icon"
-                  >
+                    class="previous-icon">
                 </button>
                 <button class="arrow-btn next-btn">
                   <img

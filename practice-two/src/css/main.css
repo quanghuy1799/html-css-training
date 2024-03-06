@@ -1,5 +1,4 @@
 .container {
-  min-width: 430px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -57,6 +56,7 @@
     align-items: center;
     gap: 16px;
   }
+  
   .hero-image-item {
     display: flex;
     flex-direction: column;
@@ -66,6 +66,7 @@
   .check-in-image {
     width: 140px;
   }
+
   .add-user {
     position: absolute;
     left: 239px;
@@ -78,6 +79,7 @@
     left: 34px;
     background-color: var(--primary);
   }
+
   .top-places-frame {
     position: absolute;
     display: inline-block;
@@ -91,6 +93,7 @@
     left: 305px;
     text-wrap: nowrap;
   }
+
   .top-places-icon {
     position: absolute;
     width: 16px;
