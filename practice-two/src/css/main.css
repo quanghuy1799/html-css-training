@@ -42,6 +42,7 @@
 .hero-image {
   position: relative;
   height: 366px;
+
   .hero-vector {
     width: 396px
   }
@@ -171,10 +172,6 @@
   padding: 24px;
   background-color: var(--background);
   border: 1px solid var(--border-color);
-
-  .play-icon,img:hover {
-    filter: brightness(0);
-  }
 }
 
 .partner-section {
@@ -278,6 +275,11 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 32px;
+  .location-image{
+    width: 396px;
+    height: auto;
+  }
+
   .best-location-card-title,
   .best-location-card-text {
     text-align: left;
@@ -836,6 +838,7 @@
 
   .arrow-button {
     gap: 32px;
+    justify-content: center;
 
     .previous-btn,
     .next-btn {
@@ -875,6 +878,12 @@
     padding: 32px;
     border: 1px solid var(--border-color);
     border-radius: 0 0 32px 32px;
+
+    .location-image{
+      width: 278px;
+      height: auto;
+    }
+
     .card-header {
       display: flex;
       flex-direction: column;
@@ -1181,8 +1190,14 @@
   .best-location-section {
     display: grid;
     gap: 64px;
+
     .best-location-card {
       grid-column: span 2;
+    }
+
+    .location-image{
+      width: 373px;
+      height: auto;
     }
 
     .best-location-content {
@@ -1248,6 +1263,11 @@
     align-items: start;
     justify-content: start;
     padding: 64px 0;
+
+  }
+
+  .arrow-button{
+    justify-content: space-between;
   }
 
   .benefit-background {
