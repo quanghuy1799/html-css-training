@@ -4,7 +4,7 @@
   "description": "- Document providing estimates for the Travel UI Landing website",
   "scripts": {
     "start": "parcel ./src/index.html ",
-    "build": "parcel build ./*.html  --dist-dir ./dist"
+    "build": "parcel build ./*.html  --dist-dir ./build"
   },
 
   "author": "",
