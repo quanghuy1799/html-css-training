@@ -516,6 +516,10 @@
   gap: 16px;
 }
 
+.customer-text {
+  font-size: 23px;
+}
+
 .customer-text::before {
   content: "Mark Smith";
   position: absolute;
